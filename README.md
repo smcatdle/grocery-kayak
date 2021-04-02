@@ -7,6 +7,6 @@ Java 1.7 or higher is recommended.
 
 The project was written as a MVP (Minimal Viable Product) in 2015. However, due to issues with Enterprise Ireland deciding to fund and back another group of people located in Tallaght, it has been decided to open source the MVP.
 
-This is a fully useable webapp, Android app and micro-services backend system, with all the basic features to start an aggregate supermarket delivery business.
+This is a fully useable webapp, Android app and micro-services backend system, with all the basic features to start an aggregate supermarket delivery business. The core part of the system is the supershop-price-engine module, which is an object oriented framework for managing the data analyzers from each of the various supermarket plugins.
 
 Anybody interested in contributing to a future system with Neural Network Algorithms and Kubernetes system, contact me at the address provided.
