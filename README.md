@@ -8,7 +8,7 @@ Java 1.7 or higher is recommended.
 
 Background :
 --------------
-The project was written as a MVP (Minimal Viable Product) in 2015. Enterprise Ireland were approached for funding or backing, but I was informed that Enterprise Ireland only support Multi Nationals and not startups! However, due to issues with Enterprise Ireland's funding deciding mechanism, they backed another crowd (with no software background or pedigree) located in the Tallaght region of Dublin. Ireland. I was politely informed that I should study a certificate course in a Community College, next to Kevin Street Garda Station! (I have an honours degree in Computer Science in UCD, and a range of startups/blue chips). 
+The project was written as a MVP (Minimal Viable Product) in 2015. Enterprise Ireland were approached for funding or backing, but I was informed that Enterprise Ireland only support Multi Nationals and not startups! However, due to issues with Enterprise Ireland's funding deciding mechanism, they backed another crowd (with no software background or pedigree) located in the Tallaght region of Dublin. Ireland. I was politely informed that I should study a certificate course in a Community College, next to Kevin Street Garda Station! (I have an honours degree in Computer Science in UCD, and a range of startups/blue chips). This was just the start of the attacks, for pursueing this project. 
 It has now been decided to open source the MVP source code.
 
 
