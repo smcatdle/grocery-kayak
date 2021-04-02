@@ -8,10 +8,20 @@ Java 1.7 or higher is recommended.
 
 Background :
 --------------
-The project was written as a MVP (Minimal Viable Product) in 2015. Enterprise Ireland were approached for funding or backing, but I was informed that Enterprise Ireland only support Multi Nationals and not startups! However, due to issues with Enterprise Ireland's funding deciding mechanism, they backed another crowd (with no software background or pedigree) located in the Tallaght region of Dublin. Ireland. It has now been decided to open source the MVP source code.
+The project was written as a MVP (Minimal Viable Product) in 2015. Enterprise Ireland were approached for funding or backing, but I was informed that Enterprise Ireland only support Multi Nationals and not startups! However, due to issues with Enterprise Ireland's funding deciding mechanism, they backed another crowd (with no software background or pedigree) located in the Tallaght region of Dublin. Ireland. I was politely informed that I should study a certificate course in a Community College, next to Kevin Street Garda Station! (I have an honours degree in Computer Science in UCD, and a range of startups/blue chips). 
+It has now been decided to open source the MVP source code.
 
 
+Implementation :
+------------------
 This is a fully useable webapp, Android app and micro-services backend system, with all the basic features to start an aggregate supermarket delivery business. The core part of the system is the supershop-price-engine module, which is an object oriented framework for managing the data analyzers from each of the various supermarket plugins.
+
+
+Deployment :
+--------------
+
+
+
 
 Anybody interested in contributing to a future system with Neural Network Algorithms and Kubernetes system, contact me at the address provided.
 
