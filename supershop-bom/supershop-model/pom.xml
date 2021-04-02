@@ -1,0 +1,84 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+      <groupId>com.supershop</groupId>
+      <artifactId>supershop-bom</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>com.supershop</groupId>
+  <artifactId>supershop-model</artifactId>
+  <packaging>jar</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>supershop-model</name>
+  <url>http://maven.apache.org</url>
+  <description>SuperShop Model</description>
+<dependencies>
+  
+    
+    <dependency>
+      <groupId>net.sourceforge.htmlunit</groupId>
+      <artifactId>htmlunit</artifactId>
+      <version>2.12</version>
+	</dependency>
+
+		
+  </dependencies>
+
+	<repositories>
+		<!-- For Hibernate Validator -->
+		<repository>
+			<id>org.jboss.repository.release</id>
+			<name>JBoss Maven Release Repository</name>			
+			<url>https://repository.jboss.org/nexus/content/repositories/releases</url>
+			<snapshots><enabled>false</enabled></snapshots>			
+		</repository>
+	</repositories>
+  
+  <build>
+	    <defaultGoal>compile</defaultGoal>
+	    <plugins>
+	    	<!-- Maven compiler plugin -->
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+					<showWarnings>true</showWarnings>
+					<excludes>
+                      <exclude>**/**/**/util/*.java</exclude>
+                    </excludes>
+                    <testExcludes>
+                      <exclude>**/**/**/util/*.java</exclude>
+                    </testExcludes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+			    <version>2.2</version>
+			    <configuration>
+			        <excludes>                      
+			            <exclude>SupervaluURLHelper.java</exclude>
+			            <exclude>URLHelper.java</exclude>
+			        </excludes>
+			    </configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>install</id>
+						<phase>install</phase>
+						<goals>
+							<goal>sources</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+	    </plugins>
+	</build>
+  <!--<build>
+    <finalName>agent-record</finalName>
+  </build>-->
+</project>

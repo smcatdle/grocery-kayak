@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.grocerykayak" version="0.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="SharedPref">
+        <param name="android-package" value="SharedPref" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-intent href="market:*" />
+    <name>Grocery Kayak</name>
+    <description>
+        A new way to grocery shop.
+    </description>
+    <author email="supershop@net-shopping.com" href="http://cordova.io">
+        Grocery Kayak Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <access origin="http://my-supershop.rhcloud.com" />
+    <access origin="http://img.tesco.ie" />
+    <access origin="http://shop.supervalu.ie" />
+</widget>

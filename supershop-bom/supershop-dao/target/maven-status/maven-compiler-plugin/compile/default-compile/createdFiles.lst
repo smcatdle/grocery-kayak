@@ -1,0 +1,9 @@
+com/company/supershop/dao/impl/AccountDAOImpl.class
+com/company/supershop/dao/PromotionDAO.class
+com/company/supershop/dao/AccountDAO.class
+com/company/supershop/dao/impl/PromotionDAOImpl.class
+com/company/supershop/dao/BasketDAO.class
+com/company/supershop/dao/ProductDAO.class
+com/company/supershop/dao/impl/ProductDAOImpl.class
+com/company/supershop/dao/impl/BasketDAOImpl.class
+com/company/supershop/util/HibernateUtil.class

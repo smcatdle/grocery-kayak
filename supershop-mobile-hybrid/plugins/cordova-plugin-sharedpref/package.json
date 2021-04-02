@@ -1,0 +1,26 @@
+{
+    "name": "cordova-plugin-sharedpref",
+    "version": "0.0.3",
+    "description": "Cordova Shared preference plugin",
+    "cordova": {
+        "id": "cordova-plugin-SharedPref",
+        "platforms": [
+      "android"
+    ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fazleyKholil/SharedPreferences.git"
+    },
+    "keywords": [
+        "ecosystem:cordova",
+        "cordova-android",
+        "Shared",
+        "Shared preference",
+        "data",
+        "storage",
+        "Preferences"
+  ],
+    "author": "Kholil Mohammad Fazley",
+    "license": "Apache 2.0"
+}

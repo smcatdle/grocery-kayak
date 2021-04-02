@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.company.supershop.model.Account" table="account" lazy="false">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="increment" />
+        </id>
+        <property name="email" type="string">
+            <column name="email" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" />
+        </property>
+        <property name="role" type="string">
+            <column name="role" />
+        </property>
+        <property name="ip" type="string">
+            <column name="ip" />
+        </property>
+        <property name="resetCode" type="string">
+            <column name="reset_code" />
+        </property>
+        <property name="dateCreated" type="date">
+            <column name="date_created" length="13" not-null="true" />
+        </property>
+        <property name="dateUpdated" type="date">
+            <column name="date_updated" length="13" not-null="true" />
+        </property>
+    </class>
+	
+    <query name="Account.findAccountByName">
+		<![CDATA[from Account where email = :email]]>
+	</query>
+	
+</hibernate-mapping>

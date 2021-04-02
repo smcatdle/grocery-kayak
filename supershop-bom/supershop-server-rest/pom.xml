@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.supershop</groupId>
+		<artifactId>supershop-bom</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>com.supershop</groupId>
+	<artifactId>supershop-server-rest</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>supershop-server-rest</name>
+	<url>http://maven.apache.org</url>
+	<description>SuperShop Rest Server</description>
+
+	<dependencies>
+
+		<!-- <dependency> <groupId>com.google.appengine</groupId> <artifactId>appengine-api-1.0-sdk</artifactId> 
+			<version>1.8.1</version> </dependency> <dependency> <groupId>com.google.appengine</groupId> 
+			<artifactId>appengine-api-stubs</artifactId> <version>1.8.1</version> </dependency> -->
+
+		<dependency>
+			<groupId>company-utils</groupId>
+			<artifactId>company-utils</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.supershop</groupId>
+			<artifactId>supershop-model</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.supershop</groupId>
+			<artifactId>supershop-dao</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.supershop</groupId>
+			<artifactId>supershop-price-engine</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		
+	</dependencies>
+
+	 <properties>
+	    <docker.image.prefix>grocerykayak</docker.image.prefix>
+	 </properties>
+
+	<build>
+		<finalName>ROOT</finalName>
+		<!--  <defaultGoal>compile</defaultGoal>-->
+		<plugins>
+			<!-- Maven compiler plugin -->
+			<!-- <plugin> <artifactId>maven-compiler-plugin</artifactId> <configuration> 
+				<source>1.7</source> <target>1.6</target> <showWarnings>true</showWarnings> 
+				<excludes> <exclude>**/**/**/util/*.java</exclude> </excludes> <testExcludes> 
+				<exclude>**/**/**/ProductExtractorTest.java</exclude> </testExcludes> </configuration> 
+				</plugin> -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.2</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+					<showWarnings>true</showWarnings>
+					<excludes>
+						<exclude>**/**/**/util/*.java</exclude>
+						<!--<exclude>**/**/**/servlets/*.java</exclude>-->
+					</excludes>
+					<testExcludes>
+						<exclude>**/**/**/ProductExtractorTest.java</exclude>
+					</testExcludes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.5</version>
+				<configuration>
+					<webXml>${project.basedir}\src\main\webapp\WEB-INF\web.xml</webXml>
+					<warsourcedirectory>src/main/webapp</warsourcedirectory>
+					<!--  <failOnMissingWebXml>false</failOnMissingWebXml>-->
+					<webResources>
+			            <resource>
+			                <directory>${project.build.directory}/html</directory>
+			            </resource>
+			        </webResources>
+				</configuration>
+			</plugin>
+			<!-- <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>install</id>
+						<phase>install</phase>
+						<goals>
+							<goal>sources</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin> -->
+			<!--  <plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<url>http://localhost:49823/manager/text</url>
+					<username>admin</username>
+					<password>password</password>
+					<path>/supershop-rest-server</path>
+					<port>49823</port>
+				</configuration>
+			</plugin>-->
+			<plugin>
+				<groupId>com.google.appengine</groupId>
+				<artifactId>appengine-maven-plugin</artifactId>
+				<version>1.8.0</version>
+			</plugin>
+
+	      <plugin>
+	        <groupId>com.samaxes.maven</groupId>
+	        <artifactId>minify-maven-plugin</artifactId>
+	        <version>1.7.4</version>
+	        <executions>
+	          <execution>
+	            <id>default-minify</id>
+	            <configuration>
+	              <charset>UTF-8</charset>
+	              <webappTargetDir>${project.build.directory}/html</webappTargetDir>
+	              <cssSourceDir>html/css</cssSourceDir>
+	              <cssSourceFiles>
+	                <cssSourceFile>supershop.css</cssSourceFile>
+	                <cssSourceFile>bootstrap.min.css</cssSourceFile>
+	                <!--<cssSourceFile>angular-material.css</cssSourceFile>-->
+	                <cssSourceFile>kendo.material.min.css</cssSourceFile>
+	              </cssSourceFiles>
+	              <cssFinalFile>style.css</cssFinalFile>
+	              <jsSourceDir>html</jsSourceDir>
+	              <jsSourceFiles>
+	              	<!--<jsSourceFile>vendor/jquery/dist/jquery.js</jsSourceFile>-->
+	              	<!--<jsSourceFile>vendor/angular/angular.min.js</jsSourceFile>-->
+	              	<jsSourceFile>vendor/angular-ui-router/release/angular-ui-router.js</jsSourceFile>
+	              	<jsSourceFile>vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js</jsSourceFile>
+	              	<jsSourceFile>vendor/angular-resource/angular-resource.min.js</jsSourceFile>
+	              	<jsSourceFile>vendor/angular-base64/angular-base64.min.js</jsSourceFile>
+	                <jsSourceFile>src/common/plusOne/plusOne.js</jsSourceFile>
+	                <jsSourceFile>src/app/app.js</jsSourceFile>
+	                <jsSourceFile>src/app/store/store.js</jsSourceFile>
+	                <jsSourceFile>src/app/about/about.js</jsSourceFile>
+	                <jsSourceFile>src/app/basket/basket.js</jsSourceFile>
+	                <jsSourceFile>src/app/account/account.js</jsSourceFile>
+	                <jsSourceFile>src/app/search/search.js</jsSourceFile>
+	                <jsSourceFile>templates-app.js</jsSourceFile>
+	                <jsSourceFile>templates-common.js</jsSourceFile>
+	                <jsSourceFile>vendor/angular-bootstrap/ui-bootstrap-tpls.js</jsSourceFile>
+	                <jsSourceFile>vendor/angular-animate/angular-animate.min.js</jsSourceFile>
+	                <jsSourceFile>vendor/angular-aria/angular-aria.js</jsSourceFile>
+	              	<!--<jsSourceFile>js/kendo.all.min.js</jsSourceFile>-->
+	              	<!--<jsSourceFile>js/kendo.culture.en-IE.min.js</jsSourceFile>-->
+	              </jsSourceFiles>
+	              <jsFinalFile>script.js</jsFinalFile>
+	              <jsEngine>CLOSURE</jsEngine>
+	              <closureLanguage>ECMASCRIPT5</closureLanguage>
+       			  <closureAngularPass>true</closureAngularPass>
+	            </configuration>
+	            <goals>
+	              <goal>minify</goal>
+	            </goals>
+	          </execution>
+	        </executions>
+	      </plugin>
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>0.2.3</version>
+				<configuration>
+					<imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+					<dockerDirectory>src/main/docker</dockerDirectory>
+					<resources>
+						<resource>
+							<targetPath>/</targetPath>
+							<directory>${project.build.directory}</directory>
+							<include>ROOT.war</include>
+						</resource>
+					</resources>
+				</configuration>
+			</plugin>
+			<!--<plugin>
+			    <groupId>com.github.searls</groupId>
+			    <artifactId>jasmine-maven-plugin</artifactId>
+			    <version>1.3.1.3</version>
+			    <executions>
+			        <execution>
+			            <goals>
+			                <goal>test</goal>
+			            </goals>
+			        </execution>
+			    </executions>
+			    <configuration>
+			    	<webDriverClassName>org.openqa.selenium.phantomjs.PhantomJSDriver</webDriverClassName>
+					<preloadSources>
+				        <source>${project.basedir}/src/main/webapp/vendor/jquery/1.10.2/jquery.js</source>
+				        <source>${project.basedir}/src/main/webapp/vendor/angular/1.0.5/angular.js</source>
+				    </preloadSources>
+			        <jsSrcDir>src/main/webapp/js</jsSrcDir>
+			        <jsTestSrcDir>src/test/webapp/js</jsTestSrcDir>
+			        <specIncludes>
+			            <include>*Spec.js</include>
+			        </specIncludes>
+			    </configuration>
+			</plugin>
+			<plugin>
+			      <groupId>com.github.timurstrekalov</groupId>
+			      <artifactId>saga-maven-plugin</artifactId>
+			      <version>1.4.0</version>
+			      <executions>
+			        <execution>
+			          <goals>
+			            <goal>coverage</goal>
+			          </goals>
+			        </execution>
+			      </executions>
+			      <configuration>
+			        <baseDir>http://localhost:${jasmine.serverPort}</baseDir>
+			        <outputDir>/jasmine-maven-plugin/target/coverage</outputDir>
+			        <noInstrumentPatterns>
+			          <pattern>.*/spec/.*</pattern> 
+			        </noInstrumentPatterns>
+			      </configuration>
+			    </plugin>-->
+		</plugins>
+	</build>
+
+
+</project>

@@ -1,0 +1,57 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"SharedPref\"><param name=\"android-package\" value=\"SharedPref\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-sharedpref": {
+            "PACKAGE_NAME": "com.grocerykayak"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "org.apache.cordova.console": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-sharedpref/www/SharedPref.js",
+            "id": "cordova-plugin-sharedpref.SharedPref",
+            "pluginId": "cordova-plugin-sharedpref",
+            "clobbers": [
+                "SharedPref"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-whitelist/whitelist.js",
+            "id": "cordova-plugin-whitelist.whitelist",
+            "pluginId": "cordova-plugin-whitelist",
+            "runs": true
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-sharedpref": "0.0.3",
+        "cordova-plugin-whitelist": "1.0.0",
+        "org.apache.cordova.console": "0.2.13"
+    }
+}

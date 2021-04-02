@@ -1,0 +1,5 @@
+com/company/supershop/exception/ChainNotFoundException.class
+com/company/supershop/services/exceptions/ProductNotFoundException.class
+com/company/supershop/rest/StoreController.class
+com/company/supershop/exception/NotFoundException.class
+com/company/supershop/exception/ScheduledPriceEngineNotFoundException.class

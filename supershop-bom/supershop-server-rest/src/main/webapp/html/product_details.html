@@ -1,0 +1,38 @@
+<md-dialog aria-label="Details" style="margin-top: 120px; width: 500px;" ng-cloak>
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h2>Details</h2>
+      <span flex></span>
+      <md-button class="md-icon-button" ng-click="cancel()">
+        <md-icon md-svg-src="html/img/md-icons/ic_cancel_white_48px.svg" aria-label="Close dialog"></md-icon>
+      </md-button>
+    </div>
+  </md-toolbar>
+	 <md-whiteframe class="md-whiteframe-z1 product-details-box">
+		<div layout="column">
+
+				<div flex="45" class="product-box-item" layout-align="center center" style=" align-self: center;">
+					<img style="width: 200px; height: 200px;" ng-src="{{selectedProduct.imageURL | decorateImageUrl:selectedProduct.chain}}"/>
+				</div>
+				
+				<div flex="15" class="product-box-item" align="center" layout-align="center center"><strong style="font-family:arial;font-size:14px;color: #999;">{{selectedProduct.name}}</strong></div>
+
+				<div flex="10" layout="row"	style="margin-left: 40px;">
+					<div flex="50" class="grocery-icon-{{selectedProduct.chain}}"></div>
+					<div flex="40" style="font-family:arial;font-size:14px;color: black;">{{selectedProduct.price | currency:"€"}}</div>
+				</div>
+				
+
+				
+				<md-button class="md-raised md-primary"
+				ng-click="addToBasket($index)">Add</md-button>
+		</div>
+	</md-whiteframe>
+ </md-dialog>
+
+
+
+
+
+
+

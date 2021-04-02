@@ -1,0 +1,77 @@
+
+<div style="width:100%; padding-top: 110px; padding-left: 5px;">
+<pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize" ng-change="pageChanged()" items-per-page="24"></pagination>
+<div layout="row" layout-wrap style="margin-left: 10px; min-height: 800px;">
+	 <md-whiteframe class="md-whiteframe-z1 product-box" style="height:  270px; margin-right: 10px;" ng-repeat="product in products | startFrom:currentPage:24 | limitTo:24" flex="15">
+		<div>
+			<div layout="column" ng-click="showProductDetails($event, $index)">
+				<div flex="50" class="product-box-item" layout-align="center center" style=" align-self: center;">
+					<div layout="row">
+						<img style="width: 100px; height: 100px;" ng-src="{{product.imageURL}}"/>
+						<md-whiteframe class="md-whiteframe-z1" ng-show="product.price != product.lastPrice" layout="row" layout-align="right end" style="background-color: #F7F7F7;margin-left: 10px;height: 50px">
+						<div style="width: 35px;">
+								<md-icon class="percent-blue" ng-show="product.price > product.lastPrice" md-svg-icon="html/img/md-icons/ic_arrow_drop_up_blue_48px.svg"></md-icon>
+								<md-icon class="percent-red" ng-show="product.price < product.lastPrice" md-svg-icon="html/img/md-icons/ic_arrow_drop_down_red_48px.svg"></md-icon>
+								<p ng-class="{'percent-red': (product.price < product.lastPrice) ,'percent-blue': (product.price > product.lastPrice)}" ng-hide="product.price == product.lastPrice">{{(((product.price-product.lastPrice)/product.lastPrice)*100) | percent}}%</p>
+						</div>
+						</md-whiteframe>
+					</div>
+				</div>
+				
+				<div flex="25" class="product-box-item" align="center" layout-align="center center" style="min-height: 80px;max-height: 80px;height: 80px;"><strong style="font-family:arial;font-size:14px;color: #999;">{{product.name | shorten:75}}</strong></div>
+
+				<div flex="10" class="product-box-item" layout="row" layout-margin layout-fill>
+					<div flex="30" layout-align="left center" class="grocery-icon-{{product.chain}}"></div>
+					<span flex="50" layout="row" layout-align="start center">
+						<strong flex="30" class="price">{{product.price | currency:"€"}}</strong>
+						<span flex="30" hide-sm ng-show="product.price != product.lastPrice" class="last-price">{{product.lastPrice | currency:"€"}}</span>
+						<span flex="30"></span>
+					</span>
+				</div>
+			</div>
+			<div layout="column" >
+				<md-button class="md-raised md-primary"
+				ng-click="addToBasket($index)">Add</md-button>
+			</div>
+		</div>
+	</md-whiteframe>
+	<br/>
+	<br/>
+
+</div>
+<md-button class="md-fab md-fab-bottom-right" aria-label="Cart" ng-click="setSelectedChain();toggleRight();">
+	<md-icon md-svg-icon="html/img/md-icons/ic_shopping_basket_white_48px.svg"></md-icon>
+</md-button>
+<pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize" ng-change="pageChanged()" items-per-page="24"></pagination> 
+</div>
+
+<md-divider></md-divider>
+<br/>
+<div class="menu-links">
+	<a ui-sref="contact_us">Contact Us</a>
+	<!--|
+	<a href="/faqs">FAQ</a>-->
+	|
+	<a ui-sref="terms_and_cond">Terms</a>
+	|
+	<a ui-sref="privacy_conditions">Privacy</a>
+	|
+	<a ui-sref="cookie_policy">Cookies</a>
+</div>
+<div>
+<a href="https://play.google.com/store/apps/details?id=com.grocerykayak">
+  <img alt="Get it on Google Play"
+       src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+

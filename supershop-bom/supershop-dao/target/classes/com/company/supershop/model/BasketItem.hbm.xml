@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.company.supershop.model.BasketItem" table="basketitem" lazy="false">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="increment" />
+        </id>
+        <property name="accountId" type="int">
+            <column name="account_id" not-null="true" />
+        </property>
+        <property name="basketId" type="int">
+            <column name="basket_id" />
+        </property>
+        <property name="productId" type="int">
+            <column name="product_id" not-null="false"/>
+        </property>
+        <property name="barcode" type="string">
+            <column name="barcode" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="url" type="string">
+            <column name="url" not-null="true" />
+        </property>
+        <property name="imageURL" type="string">
+            <column name="image_url" not-null="true" />
+        </property>
+        <property name="price" type="double">
+            <column name="price" precision="17" scale="17" not-null="true" />
+        </property>
+        <property name="chain" type="string">
+            <column name="chain" />
+        </property>
+        <property name="amount" type="int">
+            <column name="amount" />
+        </property>
+        <property name="available" type="boolean">
+            <column name="available" />
+        </property>
+        <property name="strikethrough" type="boolean">
+            <column name="strikethrough" />
+        </property>
+        <property name="dateCreated" type="date">
+            <column name="date_created" length="13" not-null="true" />
+        </property>
+        <property name="dateUpdated" type="date">
+            <column name="date_updated" length="13" not-null="true" />
+        </property>
+    </class>
+    
+    <query name="BasketItem.getBasketItems">
+		<![CDATA[from BasketItem where basketId = :basketId and accountId = :accountId order by strikethrough]]>
+	</query>
+	
+    <query name="BasketItem.getAllBasketItems">
+        <![CDATA[from BasketItem where accountId = :accountId order by strikethrough]]>
+    </query>
+
+	<query name="BasketItem.getBasketItem">
+		<![CDATA[from BasketItem where id = :basketItemId and accountId = :accountId]]>
+	</query>
+	
+	<query name="Basket.deleteBasketItem">
+		<![CDATA[delete from BasketItem where id = :basketItemId and accountId = :accountId]]>
+	</query>
+	
+	
+</hibernate-mapping>

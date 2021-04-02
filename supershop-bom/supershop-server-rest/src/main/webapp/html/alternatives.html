@@ -1,0 +1,151 @@
+<md-bottom-sheet class="md-list md-has-header" style="height: 360px;">
+<strong style="font-family: arial; font-size: 14px; color: #999;">Alternatives</strong>
+</br>
+<md-button aria-label="Scroll Up" ng-click="scrollUpAlternatives()">
+<span>Prev</span> 
+<md-icon
+	md-svg-icon="html/img/md-icons/ic_arrow_drop_up_48px.svg">
+</md-icon> 
+</md-button> 
+<md-button
+	aria-label="Scroll Up" ng-click="scrollDownAlternatives()">
+<span>Next</span> 
+<md-icon
+	md-svg-icon="html/img/md-icons/ic_arrow_drop_down_48px.svg">
+</md-icon>
+</md-button> 
+<md-button class="md-raised md-primary" aria-label="Close" ng-click="close()">
+<md-icon
+	md-svg-icon="html/img/md-icons/ic_cancel_white_48px.svg" >
+</md-icon> 
+</md-button> 
+
+<md-list> 
+<md-list-item class="md-3-line"
+	ng-repeat="alternative in alternatives | startFrom:currentPage:4 | limitTo:4">
+<img style="width: 45px; height: 45px;"
+	class="grocery-image-{{alternative.chain}}"
+	ng-src="{{alternative.imageURL}}" />
+<div class="md-list-item-text">
+	<table>
+		<tr>
+			<td style="min-width: 200px; width: 200px;">
+				<p>
+					<strong>{{alternative.name | shorten:47}}
+				</p>
+			</td>
+			<td style="min-width: 60px; width: 60px;">
+				<table>
+					<tr>
+						<td align="right">
+							<h4 class="grocery-icon-{{alternative.chain}}"></h4>
+						</td>
+					<tr>
+					<tr>
+						<td style="font-family: arial; font-size: 12px;"><strong>{{alternative.price
+								| currency:"&#8364;"}}</strong></td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<button type="button" class="btn btn-primary" ng-model="singleModel"
+					ng-click="swapProduct($index)" btn-checkbox btn-checkbox-true="1"
+					btn-checkbox-false="0">S</button>
+			</td>
+		</tr>
+	</table>
+</div>
+<md-divider></md-divider> </md-list-item> <!--<md-list-item class="md-3-line" ng-repeat="alternative in alternatives | startFrom:currentPage:4 | limitTo:4">
+				<table align="left">
+					<tr>
+					<td>
+					<a href='#'><img style="width: 45px;height: 45px;" class="grocery-image-{{alternative.chain}}" ng-src="{{alternative.imageURL}}"/></a>
+					</td>
+					<td align="right" style="padding-left: 30px;">
+						<strong>&#8364;{{alternative.price}}</strong>
+					</td>
+					<td align="center" style="padding-left: 30px;">
+					<div class="grocery-icon-{{alternative.chain}}"></div>
+					</td>
+					<td style="margin-left: 10px;">
+						<button type="button" class="btn btn-primary" ng-model="singleModel"
+						ng-click="swapProduct($index)" btn-checkbox btn-checkbox-true="1"
+						btn-checkbox-false="0">Swap{{index}}</button>
+					</td>
+					</tr>
+					<tr>
+					<td colspan="4">
+					<div><strong style="font-family:arial;font-size:14px;color: #999;">{{alternative.name | shorten:75}}</strong></div>
+					</td>
+					</tr>
+					</table>
+        <md-divider inset></md-divider>
+      </md-list-item>--> </md-list> <!--<md-button aria-label="Scroll Up" ng-click="scrollUpAlternatives()">
+<md-icon md-svg-icon="html/img/md-icons/ic_arrow_drop_up_48px.svg"></md-icon>
+    </md-button>
+    <md-whiteframe class="md-whiteframe-z1" layout layout-align="center center" style="padding: 5px;margin-bottom: 20px;width: 300px;background: #fff;" ng-repeat="alternative in alternatives | startFrom:currentPage:4 | limitTo:4">
+    		  <span>
+                  
+                  <table align="left">
+                      <tr>
+                          <td>
+                              <a href='#'><img style="width: 45px;height: 45px;" class="grocery-image-{{alternative.chain}}" ng-src="{{alternative.imageURL}}"/></a>
+                          </td>
+                          <td align="right" style="padding-left: 30px;">
+                              <strong>&#8364;{{alternative.price}}</strong>
+                          </td>
+                          <td align="center" style="padding-left: 30px;">
+                              <div class="grocery-icon-{{alternative.chain}}"></div>
+                          </td>
+                          <td style="margin-left: 10px;">
+                              <button type="button" class="btn btn-primary" ng-model="singleModel"
+                                  ng-click="addToBasket($index)" btn-checkbox btn-checkbox-true="1"
+                                  btn-checkbox-false="0">Swap</button>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td colspan="4">
+                              <div><strong style="font-family:arial;font-size:14px;color: #999;">{{alternative.name | shorten:75}}</strong></div>
+                          </td>
+                      </tr>
+                  </table>
+              </span>
+    </md-whiteframe>
+    <md-button aria-label="Scroll Up" ng-click="scrollDownAlternatives()">
+        <md-icon md-svg-icon="html/img/md-icons/ic_arrow_drop_down_48px.svg"></md-icon>
+    </md-button>--> <!--<ul id="thumbnails" class="thumbnails">
+		<li class="span smart-element" ng-repeat="alternative in alternatives | startFrom:currentPage | limitTo:2">
+			<div class="thumbnail">
+	
+					<a href='#'><img class="grocery-image-{{alternative.chain}}" ng-src="{{alternative.imageURL}}"/></a>
+	
+					<div><strong style="font-family:arial;font-size:14px;color: #999;">{{alternative.name | shorten:75}}</strong></div>
+	
+					
+					<br>
+				<div class="thumbnail-bottom">
+					<table align="left">
+					<tr>
+					<td>
+						<button type="button" class="btn btn-primary" ng-model="singleModel"
+						ng-click="addToBasket($index)" btn-checkbox btn-checkbox-true="1"
+						btn-checkbox-false="0">Swap</button>
+					</td>
+					<td>
+						<strong>&#8364;{{alternative.price}}</strong>
+					</td>
+					</tr>
+					</table>
+					<table align="right">
+					<tr>
+					<td align="right">
+					<div class="grocery-icon-{{alternative.chain}}"></div>
+					</td>
+					</tr>
+					</table>
+				</div>
+			</div>
+		</li>
+	
+	
+	</ul>--> </md-bottom-sheet>

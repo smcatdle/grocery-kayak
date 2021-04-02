@@ -1,0 +1,1451 @@
+<html lang="en">
+  <head>
+    <script language="JavaScript1.3">
+//<![CDATA[
+et_js=1.3
+//]]>
+    </script>
+    <script language="JavaScript1.9">
+//<![CDATA[
+et_pd_v=1.9;
+//]]>
+    </script>
+    <script language="JavaScript1.8">
+//<![CDATA[
+et_pd_v=1.8;
+//]]>
+    </script>
+    <script language="JavaScript1.7">
+//<![CDATA[
+et_pd_v=1.7;
+//]]>
+    </script>
+    <script language="JavaScript1.6">
+//<![CDATA[
+et_pd_v=1.6;
+//]]>
+    </script>
+    <script language="JavaScript1.5">
+//<![CDATA[
+et_pd_v=1.5;
+//]]>
+    </script>
+    <script language="JavaScript1.4">
+//<![CDATA[
+et_pd_v=1.4;
+//]]>
+    </script>
+    <script language="JavaScript1.3">
+//<![CDATA[
+et_pd_v=1.3;
+//]]>
+    </script>
+    <script language="JavaScript1.2">
+//<![CDATA[
+et_pd_v=1.2;
+//]]>
+    </script>
+    <script language="JavaScript1.1">
+//<![CDATA[
+et_pd_v=1.1;
+//]]>
+    </script>
+    <script language="JavaScript1">
+//<![CDATA[
+et_pd_v=1;
+//]]>
+    </script>
+    <!-- PageID 23 - published by OpenText Web Site Management 11.0 - 11.0.1.642 -->    <!-- Resources www.lidl.ie|GRNewsletter||GRCommon|Resources -->    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="/statics/lidl-common/global/css/screen.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="/statics/lidl-common/global/css/print.css" media="print"/>
+    <!--[if IE 7]>
+            <link href="/statics/lidl-common/global/css/ie7.css" rel="stylesheet" type="text/css" media="screen" />
+            <![endif]-->    <script type="text/javascript" src="/statics/lidl-common/global/js/main.js">
+    </script>
+    <script type="text/javascript" src="/statics/lidl-common/global/js/jquery.url.js">
+    </script>
+    <script type="text/javascript" src="/statics/lidl-common/global/js/jquery.cookie.js">
+    </script>
+    <script type="text/javascript" src="/statics/lidl-common/global/js/jquery.filialfinder.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="/statics/lidl-ie/ds_css/theme.css" media="screen"/>
+    <script>
+//<![CDATA[
+
+            /* Show error message if cookies are disabled */
+            $(document).ready(function() {
+            if (navigator.cookieEnabled == false) {
+                var attentionText = "Note:";
+                var attentionNoCookie = "Your browser does not support cookies. Please allow cookies to be able to use all the features of our site."; 
+                var attentionMessage = '<div id="nocookie"><p><strong>' + attentionText + ':</strong> '+ attentionNoCookie +'</p></div>';
+                $('body').prepend(attentionMessage);
+            }});
+            
+//]]>
+    </script>
+    <title>
+      
+        Weekly Specials - Lidl Ireland
+    
+    </title>
+    <script type="text/javascript" src="//www.etracker.de/cnt_js.php?v=4.0&amp;java=y&amp;tc=1386557582522&amp;et_tz=0&amp;et=6TmC3b&amp;et_ilevel=1&amp;swidth=1024&amp;sheight=768&amp;siwidth=1256&amp;siheight=605&amp;scookie=1&amp;scolor=24&amp;et_pagename=%3Ewww.lidl.ie%3EWeekly%20Specials&amp;et_areas=en&amp;et_target=,0,0,0,0&amp;et_se=1&amp;et_url=http://www.lidl.ie/cps/rde/www_lidl_ie&amp;slang=en-us&amp;et_tag=ar=&amp;p=Shockwave%20Flash%209.0%3BJavascript%201.9&amp;et_fpc=_et_coid%3Dc6025f59f72831c73bc23ada0ba801dd&amp;et_coid=4c7c66dcde451720dad6b2f2a55e26a3&amp;et_ca=1&amp;et_cd=www.lidl.ie&amp;dh=PuHnUbHTgzSPDACVNTqDUA==">
+    </script>
+  </head>
+  <body style="background-position: center 0px;">
+    <noscript>
+      
+        &lt;p&gt;
+            &lt;strong&gt;Note:&lt;/strong&gt;
+            Javascript is not enabled in your browser. Please enable javascript in your browser to continue
+        &lt;/p&gt;
+    
+    </noscript>
+    <ul class="hide">
+      <li>
+        <a href="#firstlevel">
+          Skip to navigation
+        </a>
+      </li>
+      <li>
+        <a href="#content">
+          Skip to Content
+        </a>
+      </li>
+    </ul>
+    <script type="text/javascript">
+//<![CDATA[
+
+                        $(document).ready(function() {
+                            var cookieBanner = $("#cookie-banner");
+                            if($("#cookie-banner").length  ) {
+                                var cookieBannerHeight = $(cookieBanner).height();
+                                if($.cookie("cookieNotificationAccepted") != "true")
+                                {
+                                    $("body").css("background-position", "center "+cookieBannerHeight+"px");
+                                    $("#cookie-banner").show();
+                                }
+                                $("#cookie-banner-ok-btn").click(function() {
+                                    $.cookie("cookieNotificationAccepted", "true", { expires:30 , path: "/" });
+                                    $("#cookie-banner").hide();
+                                    $("body").css("background-position", "center 0px");
+                                });
+                            }
+                        });
+                    
+//]]>
+    </script>
+
+    <div id="wrapper">
+      <header>
+        <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/index.htm" id="logolink">
+          <img src="/statics/lidl-ie/ds_img/layout/logo.png" id="logo" alt=""/>
+          <span class="hide">
+          </span>
+        </a>
+        <!-- Resources www.lidl.ie|GRNewsletter||GRCommon|Resources -->        <div id="header-teaser">
+          <span>
+            <img src="/statics/lidl-ie/ds_img/assets_x_x/BlankHeader.png" alt="A Lidl Bit of Magic"/>
+          </span>
+        </div>
+        <ul id="metanav">
+          <li>
+            <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/index.htm" class="metalidlactive">
+              Lidl
+            </a>
+          </li>
+        </ul>
+        <ul id="userbar">
+          <!--<li><a href="#" id="usernote">Shopping list</a></li>-->        </ul>
+      </header>
+      <nav class="">
+        <ul id="firstlevel">
+          <li class="active">
+            <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/index.htm">
+              Weekly Specials
+            </a>
+            <ul name="|" class="secondlevel">
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/Offers.htm?id=42">
+                  <img alt="" src="/catalogmedia/ie/slot/offerdate/42/wk50_slot_hightech.jpg" onmouseover="
+                            this.src='/catalogmedia/ie/slot/offerdate/42/wk50_slot_hightech_hover.jpg';
+                          " onmouseout="
+                            this.src='/catalogmedia/ie/slot/offerdate/42/wk50_slot_hightech.jpg';
+                          "/>
+                  <p>
+                    Monday, 09.12.
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/Offers.htm?id=43">
+                  <img alt="" src="/catalogmedia/ie/slot/offerdate/43/wk50_slot_getcreative_comfyclothes.jpg" onmouseover="
+                            this.src='/catalogmedia/ie/slot/offerdate/43/wk50_slot_getcreative_comfyclothes_hover.jpg';
+                          " onmouseout="
+                            this.src='/catalogmedia/ie/slot/offerdate/43/wk50_slot_getcreative_comfyclothes.jpg';
+                          "/>
+                  <p>
+                    Monday, 09.12.
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/Offers.htm?id=44">
+                  <img alt="" src="/catalogmedia/ie/slot/offerdate/44/wk50_slot_getcreative_giftstoremember.jpg" onmouseover="
+                            this.src='/catalogmedia/ie/slot/offerdate/44/wk50_slot_getcreative_giftstoremember_hover.jpg';
+                          " onmouseout="
+                            this.src='/catalogmedia/ie/slot/offerdate/44/wk50_slot_getcreative_giftstoremember.jpg';
+                          "/>
+                  <p>
+                    Thursday, 12.12.
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/Offers.htm?id=45">
+                  <img alt="" src="/catalogmedia/ie/slot/offerdate/45/wk50_slot_pamperyourself.jpg" onmouseover="
+                            this.src='/catalogmedia/ie/slot/offerdate/45/wk50_slot_pamperyourself_hover.jpg';
+                          " onmouseout="
+                            this.src='/catalogmedia/ie/slot/offerdate/45/wk50_slot_pamperyourself.jpg';
+                          "/>
+                  <p>
+                    Monday, 16.12.
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/Offers.htm?id=46">
+                  <img alt="" src="/catalogmedia/ie/slot/offerdate/46/wk51_slot_getcreative_newkitchenware_1.jpg" onmouseover="
+                            this.src='/catalogmedia/ie/slot/offerdate/46/wk51_slot_getcreative_newkitchenware_hover.jpg';
+                          " onmouseout="
+                            this.src='/catalogmedia/ie/slot/offerdate/46/wk51_slot_getcreative_newkitchenware_1.jpg';
+                          "/>
+                  <p>
+                    Monday, 16.12.
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3245.htm" target="">
+              Offers
+            </a>
+            <ul class="secondlevel">
+              <li id="356c78f8-9587-4d41-8aa9-6754686646c6">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3245.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/slot_new1_02.jpg" onmouseover="this.src='/statics/lidl-ie/ds_img/assets_116_x/slot_new1_02_hover2.jpg';" onmouseout="this.src='/statics/lidl-ie/ds_img/assets_116_x/slot_new1_02.jpg';" alt="Fresh Offers"/>
+                  <p>
+                    
+                            Fresh Offers
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="f5d660c5-7c5c-49bc-9d26-6fec903cea52">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3247.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/slot_new1_05.jpg" onmouseover="this.src='/statics/lidl-ie/ds_img/assets_116_x/slot_new1_05_hover2.jpg';" onmouseout="this.src='/statics/lidl-ie/ds_img/assets_116_x/slot_new1_05.jpg';" alt="Fruit &amp; Veg"/>
+                  <p>
+                    
+                            Fruit &amp; Veg
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="fdba7ce6-e15b-4ae4-95cf-a35a69bcf9ac">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3156.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/slot_new1_01.jpg" onmouseover="this.src='/statics/lidl-ie/ds_img/assets_116_x/slot_new1_01_hover2.jpg';" onmouseout="this.src='/statics/lidl-ie/ds_img/assets_116_x/slot_new1_01.jpg';" alt="Plants &amp; Flowers"/>
+                  <p>
+                    
+                            Plants &amp; Flowers
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="586b621a-7ec1-4a13-b299-096eab1506cb">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3012.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/tvspotslot_01.jpg" onmouseover="this.src='/statics/lidl-ie/ds_img/assets_116_x/tvspotslot_hover02.jpg';" onmouseout="this.src='/statics/lidl-ie/ds_img/assets_116_x/tvspotslot_01.jpg';" alt="Tv Spots"/>
+                  <p>
+                    
+                            Tv Spots
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="ba440d82-2588-41a9-9a0c-1550897ab5bf">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3431.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/slotimage.jpg" alt="Super Weekend Offers"/>
+                  <p>
+                    
+                            Super Weekend Offers
+                        
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2703.htm">
+              More For You
+            </a>
+            <ul class="secondlevel">
+              <li id="00564449-b7d3-4d12-913b-c6b408f2a64e">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2785.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/newsletter116x55.jpg" alt="Newsletter"/>
+                  <p>
+                    
+                            Newsletter
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="85ba10f0-8481-442e-9739-63c8b2086115">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3095.htm">   
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/116x55leafletnew.jpg" alt="Online Leaflets"/>
+                  <p>
+                    
+                            Online Leaflets
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="89503626-8b6e-48b0-93db-64c47a89d637">   id="356c78f8-9587-4d41-8aa9-6754686646c6"
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2811.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/storesearch116x55.jpg" alt="Store Finder"/>
+                  <p>
+                    
+                            Store Finder
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="a35c5120-e194-49da-8591-60011b8b56c6">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2707.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/app116x55.jpg" alt="Lidl Mobile Apps"/>
+                  <p>
+                    
+                            Lidl Mobile Apps
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="37c443b8-d4ea-4297-b2d2-c45dcbe5ef63">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2708.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/productvideos116x55.jpg" alt="Product Video Archive"/>
+                  <p>
+                    
+                            Product Video Archive
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="6b2a06fe-6de8-4293-824d-788ebaa7b6b0">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2710.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/competitionwinners116x55.jpg" alt="Competition Winners"/>
+                  <p>
+                    
+                            Competition Winners
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="b213daf2-f646-47b8-a338-edd769797112">
+                <a href="http://www.lidl-service.com/cps/rde/lsp/hs.xsl/searchpage.html?rdeLocaleAttr=en">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/serviceportal.jpg" alt="Product Manuals"/>
+                  <p>
+                    
+                            Product Manuals
+                        
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2712.htm">
+              Recipes
+            </a>
+            <ul class="secondlevel tencells">
+              <li id="8beb9962-db29-4960-a1b1-9bce0931a1e2">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2874.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/Today-show-slot.jpg" alt="RTÉ Today Show &amp; Paul Fynn"/>
+                  <p>
+                    
+                            RTÉ Today Show &amp; Paul Fynn
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="b2f2e638-4d22-4a37-9b4e-cf937851e8af">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2814.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/116x55family-mealsv3.jpg" alt="7 Family Meals for €50"/>
+                  <p>
+                    
+                            7 Family Meals for €50
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="68be3044-e198-4829-9bed-ffea6bf8021c">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2815.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/116x55homecook.jpg" alt="Home-Cook Recipes"/>
+                  <p>
+                    
+                            Home-Cook Recipes
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="c56acdfa-3dd0-420f-bc46-38a521393818">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2851.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/116x55expert-cuts.jpg" alt="Paul Flynn Expert Cuts Recipes"/>
+                  <p>
+                    
+                            Paul Flynn Expert Cuts Recipes
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="990c78ef-5dfa-417b-b197-010be37cf3ae">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2856.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/BBQ-116x55.jpg" alt="Paul Flynn BBQ Recipes"/>
+                  <p>
+                    
+                            Paul Flynn BBQ Recipes
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="5e36a7ba-dc77-406d-96bf-6fdfc719528b">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2879.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/Spiced_Chicken.jpg" alt="Healthy Options"/>
+                  <p>
+                    
+                            Healthy Options
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="939f6539-b0c8-4cab-841b-71bdf882c47d">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2930.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/01_landing-page_Asian.jpg" alt="Asian"/>
+                  <p>
+                    
+                            Asian
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="b5414990-04e6-4cad-93ac-8e1aa6a614ac">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2934.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/01_Image_landing-page_cheese.jpg" alt="French"/>
+                  <p>
+                    
+                            French
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="17ab8b67-a267-4b36-9ec1-1a19c305ca41">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2985.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/01_Image_landing-page_Italian.jpg" alt="Italian"/>
+                  <p>
+                    
+                            Italian
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="ad9088de-b9eb-4f41-bdea-449004bda23a">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2960.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/Red_Pepper_Trout.jpg" alt="Seafood"/>
+                  <p>
+                    
+                            Seafood
+                        
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2697.htm">
+              Customer Service
+            </a>
+            <ul class="secondlevel">
+              <li id="5361319c-a6c8-4ca0-915d-f44d8f54f5e8">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2698.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/customerservice116x55.jpg" alt="Contact Us"/>
+                  <p>
+                    
+                            Contact Us
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="3080f125-d720-4335-82a0-5eda4f13a7dd">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2699.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/refund116x55.jpg" alt="Our Refund Process"/>
+                  <p>
+                    
+                            Our Refund Process
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="fa8f42a2-90e4-443e-a138-4692770f046f">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2700.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/Data-Protection-slotV3.jpg" alt="Data Protection"/>
+                  <p>
+                    
+                            Data Protection
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="de45c1fb-d6a1-4606-8251-80486a6cf243">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2701.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/faq116x55.jpg" alt="FAQs"/>
+                  <p>
+                    
+                            FAQs
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="5f98289a-f60d-4719-86e6-eebc9a7d361d">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2702.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/gda-116x55.jpg" alt="GDA &amp; Nutritional Information"/>
+                  <p>
+                    
+                            GDA &amp; Nutritional Information
+                        
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2686.htm">
+              Community
+            </a>
+            <ul class="secondlevel">
+              <li id="93205187-47a6-435d-87de-343b76355885">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2687.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/barretstown.jpg" alt="Barretstown"/>
+                  <p>
+                    
+                            Barretstown
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="7386d059-cecf-4d53-8c16-3a8f99b6c7b8">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2751.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/Crosscare.jpg" alt="Crosscare"/>
+                  <p>
+                    
+                            Crosscare
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="1575aa60-0e8c-43f2-954d-12ce4df09f8f">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2688.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/HomeCook-Hero.jpg" alt="Home-Cook Hero"/>
+                  <p>
+                    
+                            Home-Cook Hero
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="ad7a470f-82ab-48f4-8f1c-5b22110c6478">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2690.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/Sustainable-Cocoa.jpg" alt="Sustainable Cocoa"/>
+                  <p>
+                    
+                            Sustainable Cocoa
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="eb6597fa-676d-4996-bb0d-55174475fd15">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2691.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/Organicslot.jpg" alt="Organic"/>
+                  <p>
+                    
+                            Organic
+                        
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2692.htm">
+              More About Us
+            </a>
+            <ul class="secondlevel">
+              <li id="7f5153df-461c-431c-b467-4431a9b01ab4">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2693.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/awardwinning166x55.jpg" alt="Award Winning Quality"/>
+                  <p>
+                    
+                            Award Winning Quality
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="c97e9714-39b9-4433-820d-5caf057e2618">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2694.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/chooseexpert116x55.jpg" alt="Our Expert Cuts"/>
+                  <p>
+                    
+                            Our Expert Cuts
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="34e079e2-e238-4e53-9e43-4a1dbf3eaa6b">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2695.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/chooselidl116x55.jpg" alt="Choose Lidl"/>
+                  <p>
+                    
+                            Choose Lidl
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="7ad0d68c-e0a1-4d61-818d-b7c148b93a60">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2696.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/toujours116x55.jpg" alt="Toujours Revolution"/>
+                  <p>
+                    
+                            Toujours Revolution
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="40841006-708c-4b76-9c10-f0171c576731">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/immobilien.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/slot_immobilien.jpg" alt="Property"/>
+                  <p>
+                    
+                            Property
+                        
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2804.htm">
+              Careers
+            </a>
+            <ul class="secondlevel">
+              <li id="0f175b9e-2b3e-4b33-9051-348c1cac7433">
+                <a href="http://careers.lidl.ie">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/slot_einstieg_land.jpeg" alt="Joining Lidl Ireland"/>
+                  <p>
+                    
+                            Joining Lidl Ireland
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="2e21b13a-2b5c-4203-8115-8d74b6643240">
+                <a href="http://www.karriere-bei-lidl.com">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/slot_lidl_eu.jpg" alt="Careers with Lidl"/>
+                  <p>
+                    
+                            Careers with Lidl
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="63185cd9-a60d-4a5c-bb61-268d80d97dc8">
+                <a href="https://collector2.s.trendence-survey.com/nq.cfm?q=8b80dbdd-1c36-4e48-84a6-1d7f53e53a7b">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/top110employers116x55.jpg" alt="Vote Now and Win!"/>
+                  <p>
+                    
+                            Vote Now and Win!
+                        
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3196.htm">
+              A Lidl Bit of Magic
+            </a>
+            <ul class="secondlevel">
+              <li id="cbae784b-9271-4852-b5b4-3895244d0354">
+                <a href="http://deluxe.lidl.ie/">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/116X90XmasExperience.jpg" alt="Deluxe Christmas Experience"/>
+                  <p>
+                    
+                            Deluxe Christmas Experience
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="dfaa666f-e340-44c5-9c9c-bdef649c50ae">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3215.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/116x90_feast.jpg" alt="Choose A Christmas Feast!"/>
+                  <p>
+                    
+                            Choose A Christmas Feast!
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="b6cd7c76-4845-4bd4-9be3-cf815bba8112">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3207.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/116x90_rated.jpg" alt="Choose Rated and Relished"/>
+                  <p>
+                    
+                            Choose Rated and Relished
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="e8e7e683-9a53-4f41-9caf-0b892cfc752d">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3213.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/116x90_competition.jpg" alt="Christmas Competition- Enter Now!"/>
+                  <p>
+                    
+                            Christmas Competition- Enter Now!
+                        
+                  </p>
+                </a>
+              </li>
+              <li id="a3cf1b97-b5f8-4a71-a74b-8e221603f43b">
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3214.htm">
+                  <img src="/statics/lidl-ie/ds_img/assets_116_x/116x90_PaulFlynn.jpg" alt="Paul Flynn Christmas Recipes"/>
+                  <p>
+                    
+                            Paul Flynn Christmas Recipes
+                        
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <form action="#" id="search" style="background-image: none !important">
+        <div>
+          <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2785.htm" id="searchnewsletter">
+            Newsletter
+          </a>
+          <a href="javascript:window.print()" id="searchprint">
+            Print
+          </a>
+        </div>
+      </form>
+      <article id="content">
+        <h6 class="hide">
+          Main Content Area
+        </h6>
+        <section class="widecontent">
+          <div class="message error" id="ar_message" style="display:none;">
+            <h4>
+              Hint
+            </h4>
+            <p>
+              Sorry there were no stores found. Please try again
+            </p>
+          </div>
+          <h1 class="startpage_nofiliale" style="display: none;">
+            <strong/>
+            Please enter your details into one or more of the following fields so we can locate your nearest store
+            <span id="storeSearch">
+              Find Your Nearest Store 
+            </span>
+          </h1>
+          <h1 class="startpage_nonfood" id="nonfood" style="display: none;">
+            <strong>
+              In the selected branch unfortunately no NonFood is offered.
+            </strong>
+          </h1>
+          <!-- Resources www.lidl.ie|GRNewsletter||GRCommon|Resources -->          <div style="" id="teasershow">
+            <ul class="pager tabs" id="teasershow_pager_ul1">
+              <!-- /cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3425.htm -->              <li>
+                <a href="#" class="pagenum active" rel="0">
+                  <h2>
+                    Deluxe
+                  </h2>
+                </a>
+              </li>
+              <!-- /cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3424.htm -->              <li>
+                <a href="#" class="pagenum" rel="1">
+                  <h2>
+                    Sumptuous Starters
+                  </h2>
+                </a>
+              </li>
+              <!-- /cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3423.htm -->              <li>
+                <a href="#" class="pagenum" rel="2">
+                  <h2>
+                    Delectable Desserts
+                  </h2>
+                </a>
+              </li>
+              <!-- /cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3422.htm -->              <li>
+                <a href="#" class="pagenum" rel="3">
+                  <h2>
+                    The Perfect Apéritif
+                  </h2>
+                </a>
+              </li>
+              <!-- /cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3421.htm -->              <li>
+                <a href="#" class="pagenum" rel="4">
+                  <h2>
+                    Fruit and Veg
+                  </h2>
+                </a>
+              </li>
+            </ul>
+            <div class="viewport">
+              <ul class="overview" id="teasershow_overview_ul" style="width: 6966px; left: -774px;">
+                <li class="image cloned">
+                  <a class="linkedimage" href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://www.lidl.ie/cps/rde/SID-9F522941-83E87C56/www_lidl_ie/hs.xsl/3247.htm&amp;lnkname=sliderslot5" title="" target="_self">
+                    <img src="/statics/lidl-ie/ds_img/assets_774_x/frontpage_wk5013_fandv.jpg" alt="Fruit and Veg"/>
+                  </a>
+                </li>
+                <li class="image">
+                  <a class="linkedimage" href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://deluxe.lidl.ie/&amp;lnkname=sliderslot1" title="" target="_self">
+                    <img src="/statics/lidl-ie/ds_img/assets_774_x/frontpage_wk4713_Microsite_v2.jpg" alt=""/>
+                  </a>
+                </li>
+                <li class="image">
+                  <a class="linkedimage" href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://www.lidl.ie/cps/rde/SID-63E32254-BF6243FC/www_lidl_ie/hs.xsl/3201.htm&amp;lnkname=sliderslot2" title="" target="_self">
+                    <img src="/statics/lidl-ie/ds_img/assets_774_x/frontpage_wk5013_sumptuousstarters.jpg" alt="sumptuous starters"/>
+                  </a>
+                </li>
+                <li class="image">
+                  <a class="linkedimage" href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://www.lidl.ie/cps/rde/SID-B7FB5050-5CB65BA3/www_lidl_ie/hs.xsl/3209.htm&amp;lnkname=sliderslot3" title="" target="_self">
+                    <img src="/statics/lidl-ie/ds_img/assets_774_x/frontpage_wk5013_delectabledesserts.jpg" alt="Delectable Desserts"/>
+                  </a>
+                </li>
+                <li class="image">
+                  <a class="linkedimage" href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://www.lidl.ie/cps/rde/SID-B7FB5050-5CB65BA3/www_lidl_ie/hs.xsl/3211.htm&amp;lnkname=sliderslot4" title="" target="_self">
+                    <img src="/statics/lidl-ie/ds_img/assets_774_x/frontpage_wk5013_perfectapertif.jpg" alt="Some Sparkle"/>
+                  </a>
+                </li>
+                <li class="image">
+                  <a class="linkedimage" href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://www.lidl.ie/cps/rde/SID-9F522941-83E87C56/www_lidl_ie/hs.xsl/3247.htm&amp;lnkname=sliderslot5" title="" target="_self">
+                    <img src="/statics/lidl-ie/ds_img/assets_774_x/frontpage_wk5013_fandv.jpg" alt="Fruit and Veg"/>
+                  </a>
+                </li>
+                <li class="image cloned">
+                  <a class="linkedimage" href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://deluxe.lidl.ie/&amp;lnkname=sliderslot1" title="" target="_self">
+                    <img src="/statics/lidl-ie/ds_img/assets_774_x/frontpage_wk4713_Microsite_v2.jpg" alt=""/>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="buttons">
+              <button style="display: none;" class="play small">
+                <strong>
+                  Play
+                </strong>
+              </button>
+              <button class="pause small">
+                <strong>
+                  Pause
+                </strong>
+              </button>
+            </div>
+          </div>
+          <script type="text/javascript">
+//<![CDATA[
+
+    $('.pagenum' ).each(function(i, child) { $(child).attr('rel', i); });
+
+    $(document).ready(function () {
+        $('#teasershow').show();
+        
+        var availChildren = $('#teasershow .availability');
+        $.each(availChildren, function (i, child) { $(child).children().first().before($('<br />')); });
+        
+        $('#teasershow').tinycarousel({ 
+            start: 1, 
+            display: 1, 
+            pager: true, 
+            interval: true, 
+            intervaltime: 8000, 
+            duration: 2000, 
+            playpause: true, 
+            infinite: true 
+        });
+    });
+
+//]]>
+          </script>
+          <div class="clear">
+          </div>
+          <a href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://www.lidl.ie/cps/rde/SID-B9F355D1-9DA28E98/www_lidl_ie/hs.xsl/Offers.htm?id=44&amp;lnkname=nfslot1" target="_self" class="teaser campaign smallsize imgonly">
+            <img alt="Gifts to Remember" src="/statics/lidl-ie/ds_img/assets_186_x/wk50_promo_giftstoremember_1.jpg"/>
+          </a>
+          <a href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://www.lidl.ie/cps/rde/SID-B9F355D1-9DA28E98/www_lidl_ie/hs.xsl/Offers.htm?id=44&amp;lnkname=nfslot2" target="_self" class="teaser campaign smallsize imgonly">
+            <img alt="Gifts to Remember" src="/statics/lidl-ie/ds_img/assets_186_x/wk50_promo_giftstoremember_2.jpg"/>
+          </a>
+          <a href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://www.lidl.ie/cps/rde/SID-B9F355D1-9DA28E98/www_lidl_ie/hs.xsl/Offers.htm?id=45&amp;lnkname=nfslot3" target="_self" class="teaser campaign smallsize imgonly">
+            <img alt="Pamper Yourself" src="/statics/lidl-ie/ds_img/assets_186_x/wk51_promo_pamperyourself_1.jpg"/>
+          </a>
+          <a href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://www.lidl.ie/cps/rde/SID-B9F355D1-9DA28E98/www_lidl_ie/hs.xsl/Offers.htm?id=46&amp;lnkname=nfslot4" target="_self" class="teaser campaign smallsize imgonly">
+            <img alt="Brand New Kitchen" src="/statics/lidl-ie/ds_img/assets_186_x/wk51_promo_newkitchenware_1.jpg"/>
+          </a>
+          <div class="clear">
+          </div>
+          <a href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://www.lidl.ie/cps/rde/SID-B9F355D1-9DA28E98/www_lidl_ie/hs.xsl/3213.htm&amp;lnkname=hp4x1xmascomp" target="_self" class="teaser campaign full imgonly">
+            <img class="imgnoflash" alt="CMS_1_x_Xmas_4x1.jpg" src="/statics/lidl-ie/ds_img/assets_774_x/CMS_1_x_Xmas_4x1.jpg"/>
+          </a>
+          <div class="clear">
+          </div>
+          <a href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://www.lidl-breaks.ie/&amp;lnkname=lidlbreaksteaser" target="_blank" class="teaser campaign smallsize imgonly">
+            <img alt="lidlbreaksie.jpg" src="/statics/lidl-ie/ds_img/assets_186_x/lidlbreaksie.jpg"/>
+          </a>
+          <a href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://www.lidl.ie/cps/rde/SID-B9F355D1-9DA28E98/www_lidl_ie/hs.xsl/2811.htm&amp;lnkname=openinghourshpteaser" target="_self" class="teaser campaign smallsize imgonly">
+            <img alt="openinghours.jpg" src="/statics/lidl-ie/ds_img/assets_186_x/openinghours.jpg"/>
+          </a>
+          <a href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://www.lidl.ie/cps/rde/SID-B9F355D1-9DA28E98/www_lidl_ie/hs.xsl/2697.htm&amp;lnkname=customerservicehp" target="_self" class="teaser campaign smallsize imgonly">
+            <img alt="customerservice.jpg" src="/statics/lidl-ie/ds_img/assets_186_x/customerservice.jpg"/>
+          </a>
+          <a href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://www.lidl.ie/cps/rde/SID-B9F355D1-9DA28E98/www_lidl_ie/hs.xsl/2693.htm&amp;lnkname=awardwinninghp" target="_self" class="teaser campaign smallsize imgonly">
+            <img alt="awardwinning.jpg" src="/statics/lidl-ie/ds_img/assets_186_x/awardwinning.jpg"/>
+          </a>
+        </section>
+        <aside>
+          <h6 class="hide">
+            Further Information
+          </h6>
+          <div class="asidebox">
+            <a href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://www.lidl.ie/cps/rde/SID-5BF2D0AF-6560B9E3/www_lidl_ie/hs.xsl/3095.htm&amp;lnkname=onlineleafletteaser" class="link" target="_self">
+              <img alt="Online Leaflet" src="/statics/lidl-ie/ds_img/assets_186_x/hp_onlineleaflet_new_wk49_IE_rdax_186x195.jpg" class="noborder"/>
+            </a>
+          </div>
+          <div class="asidebox">
+            <object class="noborder imgonly" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="myId" width="186" height="42">
+              <param name="wmode" value="opaque"/>
+              <param name="movie" value="/statics/lidl-ie/ds_flash/NEW_NAV_FACEBOOK_IE.swf"/>
+              <object data="/statics/lidl-ie/ds_flash/NEW_NAV_FACEBOOK_IE.swf" type="application/x-shockwave-flash" width="186" height="42">
+                <param name="wmode" value="opaque"/>
+                <a href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=https://www.facebook.com/lidlireland&amp;lnkname=fbnavtab" class="link" target="_self">
+                  <img alt="Facebook" src="/statics/lidl-ie/ds_img/assets_186_x/NAV_IE_FACEBOOK_rdax_186x39.png" class="noborder"/>
+                </a>
+              </object>
+            </object>
+          </div>
+          <div class="asidebox">
+            <object class="noborder imgonly" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="myId" width="186" height="50">
+              <param name="wmode" value="opaque"/>
+              <param name="movie" value="/statics/lidl-ie/ds_flash/IE_nav_twitter.swf"/>
+              <object data="/statics/lidl-ie/ds_flash/IE_nav_twitter.swf" type="application/x-shockwave-flash" width="186" height="50">
+                <param name="wmode" value="opaque"/>
+                <a href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=https://twitter.com/lidl_ireland&amp;lnkname=twitternavtab" class="link" target="_self">
+                  <img alt="Twitter" src="/statics/lidl-ie/ds_img/assets_186_x/twitter_rdax_186x39.jpg" class="noborder"/>
+                </a>
+              </object>
+            </object>
+          </div>
+          <div class="asidebox">
+            <object class="noborder imgonly" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="myId" width="186" height="42">
+              <param name="wmode" value="opaque"/>
+              <param name="movie" value="/statics/lidl-ie/ds_flash/NEW_NAV_YOUTUBE_IE.swf"/>
+              <object data="/statics/lidl-ie/ds_flash/NEW_NAV_YOUTUBE_IE.swf" type="application/x-shockwave-flash" width="186" height="42">
+                <param name="wmode" value="opaque"/>
+                <a href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://www.youtube.com/user/LidlIreland&amp;lnkname=youtubenavtab" class="link" target="_self">
+                  <img alt="Youtube" src="/statics/lidl-ie/ds_img/assets_186_x/NAV_IE_YOUTUBE_rdax_186x39.png" class="noborder"/>
+                </a>
+              </object>
+            </object>
+          </div>
+          <div class="asidebox">
+            <object class="noborder imgonly" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="myId" width="186" height="40">
+              <param name="wmode" value="opaque"/>
+              <param name="movie" value="/statics/lidl-ie/ds_flash/IE_phone.swf"/>
+              <object data="/statics/lidl-ie/ds_flash/IE_phone.swf" type="application/x-shockwave-flash" width="186" height="40">
+                <param name="wmode" value="opaque"/>
+                <a href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://www.lidl.ie/cps/rde/SID-452BEB07-C1B574B6/www_lidl_ie/hs.xsl/2707.htm&amp;lnkname=appnavtab" class="link" target="_self">
+                  <img alt="Mobile App" src="/statics/lidl-ie/ds_img/assets_186_x/NAV_IE_Mobileapp_rdax_186x39.png" class="noborder"/>
+                </a>
+              </object>
+            </object>
+          </div>
+          <div class="asidebox">
+            <a href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://www.lidl.ie/cps/rde/SID-47887AFE-3EF1E64E/www_lidl_ie/hs.xsl/2785.htm&amp;lnkname=newsletterteaser" class="link" target="_self">
+              <img alt="Newsletter" src="/statics/lidl-ie/ds_img/assets_186_x/Email-Signup_IE.jpg" class="noborder"/>
+            </a>
+          </div>
+          <div class="asidebox">
+            <a href="http://www.etracker.de/lnkcnt.php?et=6TmC3b&amp;url=http://www.youtube.com/user/LidlIreland&amp;lnkname=tvspotsteaser" class="link" target="_blank">
+              <img alt="TV Spot Teaser" src="/statics/lidl-ie/ds_img/assets_186_x/Fireplace_TV-Spot-Teaser_rdax_186x343.jpg" class="noborder"/>
+            </a>
+          </div>
+        </aside>
+        <div style="clear: both">
+        </div>
+      </article>
+      <footer>
+        <div id="footerbreadcrumb">
+          <strong>
+            You are here:
+          </strong>
+          <ul>
+            <li>
+              <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/index.htm">
+                www.lidl.ie
+              </a>
+            </li>
+            <li>
+              <strong>
+                Weekly Specials
+              </strong>
+            </li>
+          </ul>
+          <a href="#wrapper" id="totoplink">
+            Go to top
+          </a>
+        </div>
+        <h6 class="hide">
+          Footer navigation
+        </h6>
+        <!-- Resources www.lidl.ie|GRNewsletter||GRCommon|Resources -->        <ul id="footer">
+          <li>
+            <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/index.htm">
+              Weekly Specials
+            </a>
+            <ul class="secondlevel">
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/Offers.htm?id=42">
+                  Monday, 09.12. - Choose High Tech Gifts from Monday 9th December
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/Offers.htm?id=43">
+                  Monday, 09.12. - Choose Comfy Clothes from Monday 9th December
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/Offers.htm?id=44">
+                  Thursday, 12.12. - Choose Gifts to Remember from Thursday 12th December
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/Offers.htm?id=45">
+                  Monday, 16.12. - Choose To Pamper Yourself from Monday 16th December
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/Offers.htm?id=46">
+                  Monday, 16.12. - Choose Brand New Kitchenware from Monday 16th December
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3245.htm">
+              Offers
+            </a>
+            <ul class="secondlevel">
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3245.htm">
+                  Fresh Offers
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3247.htm">
+                  Fruit &amp; Veg
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3156.htm">
+                  Plants &amp; Flowers
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3012.htm">
+                  Tv Spots
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3431.htm">
+                  Super Weekend Offers
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2703.htm">
+              More For You
+            </a>
+            <ul class="secondlevel">
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2785.htm">
+                  Newsletter
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3095.htm">
+                  Online Leaflets
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2811.htm">
+                  Store Finder
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2707.htm">
+                  Lidl Mobile Apps
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2708.htm">
+                  Product Video Archive
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2710.htm">
+                  Competition Winners
+                </a>
+              </li>
+              <li>
+                <a href="http://www.lidl-service.com/cps/rde/lsp/hs.xsl/searchpage.html?rdeLocaleAttr=en">
+                  Product Manuals
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2712.htm">
+              Recipes
+            </a>
+            <ul class="secondlevel">
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2874.htm">
+                  RTÉ Today Show &amp; Paul Fynn
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2814.htm">
+                  7 Family Meals for €50
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2815.htm">
+                  Home-Cook Recipes
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2851.htm">
+                  Paul Flynn Expert Cuts Recipes
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2856.htm">
+                  Paul Flynn BBQ Recipes
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2879.htm">
+                  Healthy Options
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2930.htm">
+                  Asian
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2934.htm">
+                  French
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2985.htm">
+                  Italian
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2960.htm">
+                  Seafood
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2933.htm">
+                  Desserts
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2974.htm">
+                  Cocktails
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3406.htm">
+                  Roast Turkey with Stuffing, Belotta Ham and Apple and Sprout Mash
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2697.htm">
+              Customer Service
+            </a>
+            <ul class="secondlevel">
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2698.htm">
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2699.htm">
+                  Our Refund Process
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2700.htm">
+                  Data Protection
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2701.htm">
+                  FAQs
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2702.htm">
+                  GDA &amp; Nutritional Information
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2686.htm">
+              Community
+            </a>
+            <ul class="secondlevel">
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2687.htm">
+                  Barretstown
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2751.htm">
+                  Crosscare
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2688.htm">
+                  Home-Cook Hero
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2690.htm">
+                  Sustainable Cocoa
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2691.htm">
+                  Organic
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2692.htm">
+              More About Us
+            </a>
+            <ul class="secondlevel">
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2693.htm">
+                  Award Winning Quality
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2694.htm">
+                  Our Expert Cuts
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2695.htm">
+                  Choose Lidl
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2696.htm">
+                  Toujours Revolution
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/immobilien.htm">
+                  Property
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/2804.htm">
+              Careers
+            </a>
+            <ul class="secondlevel">
+              <li>
+                <a href="http://careers.lidl.ie">
+                  Joining Lidl Ireland
+                </a>
+              </li>
+              <li>
+                <a href="http://www.karriere-bei-lidl.com">
+                  Careers with Lidl
+                </a>
+              </li>
+              <li>
+                <a href="https://collector2.s.trendence-survey.com/nq.cfm?q=8b80dbdd-1c36-4e48-84a6-1d7f53e53a7b">
+                  Vote Now and Win!
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3196.htm">
+              A Lidl Bit of Magic
+            </a>
+            <ul class="secondlevel">
+              <li>
+                <a href="http://deluxe.lidl.ie/">
+                  Deluxe Christmas Experience
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3215.htm">
+                  Choose A Christmas Feast!
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3207.htm">
+                  Choose Rated and Relished
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3213.htm">
+                  Christmas Competition- Enter Now!
+                </a>
+              </li>
+              <li>
+                <a href="/cps/rde/SID-3FC6FB3D-D1ECBB29/www_lidl_ie/hs.xsl/3214.htm">
+                  Paul Flynn Christmas Recipes
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footerlast">
+            <img src="/statics/lidl-ie/ds_img/layout/Choose_Lidllogo50x50.png" alt=""/>
+            <strong>
+              Lidl - An International Group: 
+            </strong>
+            <br/>
+            <p/>
+            <p>
+              We are a successful chain of grocery stores, expanding strongly throughout Europe and beyond. 
+              <br/>
+              
+        The cornerstone of our business and the key to our success is
+        simplicity. Our aim is to buy and sell top quality products at the
+        lowest possible price to our customers. 
+            </p>
+            <ul>
+            </ul>
+          </li>
+        </ul>
+        <div id="seolinks">
+          <ul id="seomainsites">
+            <li>
+              <a target="_blank" href="http://www.lidl.ie/cps/rde/www_lidl_ie/hs.xsl/2698.htm">
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="http://www.lidl.ie/cps/rde/www_lidl_ie/hs.xsl/2700.htm">
+                Data protection
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="http://careers.lidl.ie">
+                Careers
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="http://property.lidl.ie">
+                Property
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <!-- Copyright (c) 2000-2012 etracker GmbH. All rights reserved. -->    <!-- This material may not be reproduced, displayed, modified or distributed -->    <!-- without the express prior written permission of the copyright holder. -->    <!-- BEGIN etracker Tracklet 3.0 -->    <script type="text/javascript">
+//<![CDATA[
+document.write(String.fromCharCode(60)+'script type="text/javascript" src="http'+("https:"==document.location.protocol?"s":"")+'://code.etracker.com/t.js?et=6TmC3b">'+String.fromCharCode(60)+'/script>');
+//]]>
+    </script>
+    <script type="text/javascript" src="http://code.etracker.com/t.js?et=6TmC3b">
+    </script>
+    <!-- etracker PARAMETER 3.0 -->    <script type="text/javascript">
+//<![CDATA[
+
+/* Beginn des konfigurierbaren Parameterbereichs.
+Um folgende Parameter zu verwenden, entfernen Sie bitte die führenden zwei Schrägstriche (//) und ergänzen den Parameter um den gewünschten Wert. */
+var et_pagename       = ">www.lidl.ie>Weekly Specials";
+     
+var et_areas          = "en";
+var et_url            = document.location.href;
+//var et_target       = "";
+//var et_ilevel       = 0;
+//var et_tval         = "";
+//var et_cust         = 0;
+//var et_tonr         = "";
+//var et_tsale        = 0;
+//var et_basket       = "";
+var et_lpage          = "";
+//var et_trig         = "";
+//var et_sub          = "";
+var et_se             = "1";
+var et_tag            = "ar=";
+
+//]]>
+    </script>
+    <!-- etracker PARAMETER END -->    <!-- etracker PARAMETER END -->    <script type="text/javascript">
+//<![CDATA[
+_etc();
+//]]>
+    </script>
+    <p id="et_image" style="display:none;"/>
+    <noscript>
+      &lt;p&gt;&lt;a href="http://www.etracker.com"&gt;&lt;img style="border:0px;" alt="" src="https://www.etracker.com/nscnt.php?et=6TmC3b" /&gt;&lt;/a&gt;&lt;/p&gt;
+    </noscript>
+    <!-- etracker CODE NOSCRIPT 3.0 -->    <noscript>
+      
+&lt;p&gt;&lt;a href="http://www.etracker.de/app?et=6TmC3b"&gt;
+&lt;img style="border:0px;" alt="" src=https://www.etracker.de/cnt.php?et=6TmC3b&amp;amp;v=3.0&amp;amp;java=n&amp;amp;et_easy=0&amp;amp;et_pagename=-www.lidl.ie-Weekly+Specials&amp;amp;et_areas=&amp;amp;et_ilevel=0&amp;amp;et_target=,0,0,0&amp;amp;et_lpage=0&amp;amp;et_trig=0&amp;amp;et_se=0&amp;amp;et_cust=0&amp;amp;et_basket=&amp;amp;et_url=&amp;amp;et_tag=&amp;amp;et_sub=&amp;amp;et_organisation=&amp;amp;et_demographic=" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+    </noscript>
+    <!-- etracker CODE NOSCRIPT END-->    <!-- etracker CODE END -->    <!-- CLICK-TRACKER DELAY CODE -->    <script type="text/javascript">
+//<![CDATA[
+
+var toSleep = true; function stopTimer(){toSleep=false;} function clickTracker(LinkName){var secureID="v8KA4s"; 
+var redirectUrl="http://www.etracker.de/skin/de.def/img/1px.gif"; etrackerSink=new Image(1,1);toSleep=true; 
+etrackerSink.src="http://www.etracker.de/lnkcnt.php?et="+secureID+"&url="+ redirectUrl+"&lnkname="+LinkName;
+etrackerSink.onload=stopTimer;if(toSleep==true) {maxDelay(500);}return true;}
+function maxDelay(gap){var then,now;then=new Date().getTime();now=then; while( toSleep==true&&(now-then)<gap){now=new Date(). getTime();}}
+
+//]]>
+    </script>
+    <!-- CLICK-TRACKER DELAY CODE -->    <script type="text/javascript" src="http://browser-update.org/update.js">
+    </script>
+  </body>
+</html>
+

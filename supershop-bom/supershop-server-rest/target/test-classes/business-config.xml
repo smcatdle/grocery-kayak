@@ -1,0 +1,143 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/security
+        http://www.springframework.org/schema/security/spring-security.xsd">
+
+
+	<context:component-scan base-package="com.company.supershop" />
+	<mvc:resources mapping="/html/**" location="/html/" />
+	<mvc:annotation-driven />
+
+
+	<bean id="dataSourceTest" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="username" value="adminyQZgDEj" />
+		<property name="password" value="VcDizR5vkpmy" />
+		<property name="url" value="jdbc:mysql://10.108.41.57:47176/supershop" />
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+	</bean>
+
+	<bean id="dataSourceProd" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="username" value="adminiL4Mb4x" />
+		<property name="password" value="hBUAH7yVTApz" />
+		<property name="url" value="jdbc:mysql://10.9.168.224:46876/supershop" />
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+	</bean>
+
+	<bean id="dataSourceLocal" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="username" value="root" />
+		<property name="password" value="" />
+		<property name="url" value="jdbc:mysql://localhost:3306/supershop" />
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+	</bean>
+	
+	<bean id="jacksonMessageConverter"
+		class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"></bean>
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<ref bean="jacksonMessageConverter" />
+			</list>
+		</property>
+	</bean>
+
+	<!-- See https://blog.openshift.com/configuring-hibernateogm-for-your-jboss-app-using-mongodb/  for NoSQL migration, e.g. Google DataStore  -->
+	<!--Hibernate 4 XML SessionFactory Bean definition -->
+	<bean id="hibernate4SessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSourceLocal" />
+	  <property name="packagesToScan">
+        <array>
+          <value>com.company.supershop.model</value>
+        </array>
+      </property>
+		<property name="mappingResources">
+			<list>
+				<!-- <value>com/company/supershop/model/ProductMVO.hbm.xml</value> -->
+				<value>com/company/supershop/model/Account.hbm.xml</value>
+				<value>com/company/supershop/model/Basket.hbm.xml</value>
+				<value>com/company/supershop/model/BasketItem.hbm.xml</value>
+				<value>com/company/supershop/model/Promotion.hbm.xml</value>
+				<value>com/company/supershop/model/PromotionString.hbm.xml</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.cache.use_second_level_cache">false</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.search.default.directory_provider">filesystem</prop>
+            	<prop key="hibernate.search.default.indexBase">app-root/runtime/dependencies/jbossews/webapps/</prop>
+				<!-- <property name="hibernate.connection.driver_class"><value>com.mysql.jdbc.Driver</value></property> 
+					<property name="hibernate.connection.password"><value></value></property> 
+					<property name="hibernate.connection.pool_size"><value>1</value></property> 
+					<property name="hibernate.connection.url"><value>jdbc:mysql://localhost:3306/supershop</value></property> 
+					<property name="hibernate.connection.username"><value>root</value></property> 
+					<property name="hibernate.dialect"><value>org.hibernate.dialect.MySQLDialect</value></property> 
+					<property name="hibernate.search.autoregister_listeners"><value>false</value></property> 
+					<property name="hibernate.current_session_context_class"><value>thread</value></property> 
+					<property name="hibernate.flushMode"><value>always</value></property> <property 
+					name="connection.autocommit"><value>true</value></property> <property name="hibernate.connection.autoReconnect"><value>true</value></property> 
+					<property name="c3p0.min_size"><value>1</value></property> <property name="c3p0.max_size"><value>10</value></property> 
+					<property name="c3p0.timeout"><value>1000</value></property> <property name="hibernate.c3p0.validate"><value>true</value></property> 
+					<property name="c3p0.max_statements"><value>50</value></property> <property 
+					name="connection.provider_class"> <value>org.hibernate.connection.C3P0ConnectionProvider</value></property> -->
+			</props>
+		</property>
+	</bean>
+
+	<bean id="productDAO" class="com.company.supershop.dao.impl.ProductDAOImpl">
+		<property name="sessionFactory" ref="hibernate4SessionFactory" />
+	</bean>
+
+	<bean id="promotionDAO" class="com.company.supershop.dao.impl.PromotionDAOImpl">
+		<property name="sessionFactory" ref="hibernate4SessionFactory" />
+	</bean>
+
+
+	<bean id="siteBase" class="java.net.URI">
+		<constructor-arg value="http://localhost:10001/selenuim-tutorial/" />
+	</bean>
+
+	<bean id="firefoxDriver" class="org.openqa.selenium.firefox.FirefoxDriver" destroy-method="quit"/>
+	
+	<!-- <tx:annotation-driven/> <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"/> -->
+
+	<!--<authentication-manager> <authentication-provider> <user-service> <user 
+		name="smcardle" password="password" authorities="ROLE_USER, ROLE_ADMIN" /> 
+		<user name="admin" password="password" authorities="ROLE_ADMIN" /> </user-service> 
+		</authentication-provider> </authentication-manager> <http pattern="/login.htm*" 
+		security="none"/> <http use-expressions="false"> <intercept-url pattern='/**' 
+		access='ROLE_USER' /> <form-login login-page='/login.htm' default-target-url='/home.htm' 
+		always-use-default-target='true' /> </http> <http> ... <session-management 
+		invalid-session-url="/invalidSession.htm" /> </http> <http> <logout delete-cookies="JSESSIONID" 
+		/> </http> <global-method-security secured-annotations="enabled" /> <global-method-security> 
+		<protect-pointcut expression="execution(* com.company.supershop.services.*Service.*(..))" 
+		access="ROLE_USER"/> </global-method-security> -->
+
+
+
+
+    <!--  <security:http auto-config='true'>
+    	<security:intercept-url pattern="/**" access="ROLE_USER" />
+  	</security:http>-->
+  
+
+
+    <!--  <security:global-method-security pre-post-annotations="enabled">
+        <security:protect-pointcut expression="execution(* com.company.supershop.rest.*.*(..))"
+                                   access="ROLE_USER"/>
+    </security:global-method-security>-->
+    
+</beans> 
+

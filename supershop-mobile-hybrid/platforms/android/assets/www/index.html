@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html ng-app="GroceryKayak" ng-controller="AppCtrl" idle>
+<head>
+<title ng-bind="pageTitle">Compare Supermarket Groceries - SuperShop Ireland (Beta)</title>
+
+<meta charset="UTF-8">
+<meta name="description" content="Welcome to Grocery Kayak (Ireland)! Now you can shop around with a separate basket for each grocery store. Swap items for cheaper alternatives and never miss a bargain again." />
+<meta name="keywords" content="compare, supermarket, groceries, ireland" />
+<meta name="googlebot" content="NOODP">
+<meta name="google-site-verification" content="B6yq0rTx_afALrvIP8c0jm3uYkLHUEUrHCzxtI28wYE" />
+<!--<meta http-equiv="Cache-Control" content="public" />-->
+<!--<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />-->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+<link href="html/vendor/please-wait/build/please-wait.css" rel="stylesheet">
+<link href="html/css/supershop.css" rel="stylesheet">
+<link href="html/css/style.min.css" rel="stylesheet">
+<link href="html/css/supershop.css" rel="stylesheet">
+
+<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+<!--<link rel="stylesheet" type="text/css" href="html/vendor/flexslider/flexslider.css">
+<link href="html/vendor/angular-ui-grid/ui-grid.min.css" rel="stylesheet">
+<link href="html/vendor/angular-ui-grid/ui-grid.min.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="html/vendor/rzslider/rzslider.css" />-->
+<!--<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>-->
+<link href="html/vendor/kendo/kendo.common-material.min.css" rel="stylesheet" />
+<link href="html/vendor/kendo/kendo.material.min.css" rel="stylesheet" />
+<link href="html/vendor/kendo/kendo.common.min.css" rel="stylesheet"/>
+
+<link href="html/vendor/angular-material/angular-material.css" rel="stylesheet" >
+<!--  <link rel="stylesheet" href="html/vendor/rzslider/demo.css" />-->
+
+
+<style type="text/css">
+
+
+/*  .flexslider-container {
+    width: 50%;
+    margin: 10px auto;
+  }
+  
+
+
+  $gray: #eee;
+
+md-content.md-default-theme {
+  background-color: $gray;
+}
+md-card {
+  background-color: #fff;
+  h2:first-of-type {
+    margin-top: 0;
+  }
+}
+md-toolbar {
+  .md-button.md-default-theme {
+    border-radius: 99%; // round toolbar buttons
+  }
+}
+h2 {
+  font-weight: 400;
+}
+.md-toolbar-tools-bottom {
+  font-size: small;
+  & :last-child {
+    opacity: 0.8;
+  }
+}
+md-toolbar:not(.md-hue-1),
+.md-fab {
+  fill: #fff;
+}
+md-sidenav {
+  fill: #737373;
+  ng-md-icon {
+    position: relative;
+    top: 5px; // adjust for svg viewbox
+  }
+}
+.user-avatar {
+  border-radius: 99%;
+}*/
+
+.whiteframedemoBasicUsage md-whiteframe {
+  background: #fff;
+  margin: 20px;
+  padding: 20px; }
+
+
+
+.product-box {
+
+  padding: 5px;
+  margin-bottom: 20px;
+  min-width: 150px;
+  max-width: 150px;
+  min-height: 270px;
+  max-height: 270px;
+  background: #fff;
+
+}
+
+[flex].product-box-item {
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.supershop-search-input {
+  width:190px;
+  border-radius: 5px;
+}
+  
+/* ----------- Galaxy S5 ----------- */
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+
+  .product-box {
+
+      padding: 5px;
+      margin-bottom: 20px;
+      min-width: 150px;
+      max-width: 150px;
+      background: #fff;
+  }
+
+  .supershop-search-input {
+    width: 190px;
+    border-radius: 5px;
+  }
+  
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
+
+  .product-box {
+
+      padding: 5px;
+      margin-bottom: 20px;
+      min-width: 150px;
+      max-width: 150px;
+      background: #fff;
+  }
+  
+  .supershop-search-input {
+    width:190px;
+    border-radius: 5px;
+  }
+  
+}
+
+/* ----------- Desktop/Laptop     ----------- */
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1050px) 
+  and (max-device-width: 1680px)  { 
+
+  .product-box {
+
+      padding: 5px;
+      margin-bottom: 20px;
+      min-width: 200px;
+      max-width: 200px;
+      background: #fff;
+  }
+  
+  .supershop-search-input {
+    width:400px;
+    border-radius: 5px;
+  }
+
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) { 
+
+
+  .product-box {
+
+      padding: 5px;
+      margin-bottom: 20px;
+      min-width: 200px;
+      max-width: 200px;
+      background: #fff;
+  }
+  
+  .supershop-search-input {
+    width:400px;
+    border-radius: 5px;
+  }
+}
+
+
+.supershop-container {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   /* You can set flex-wrap and flex-direction individually */
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
+   /* Or do it all in one line with flex flow */
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+   /* tweak the where items line up on the row */
+   /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+   -webkit-align-content: flex-end;
+   align-content: flex-end;
+}
+
+
+
+</style>
+
+
+
+</head>
+<body>
+
+
+<!--<div layout="column" flex layout-fill>-->
+<!--<md-content flex layout-padding>
+  <div layout="column" layout-fill layout-align="top center">-->
+    <!--<div style="position: fixed;width: 100%;">-->
+    <md-toolbar style="position: fixed;" ng-controller="LoginCtrl" id="mainContainer">
+      <div class="md-toolbar-tools" layout-align="space-between">
+      <span layout="row" layout-align="space-between center">
+      <md-icon md-svg-icon="html/img/md-icons/ic_toc_white_48px.svg" aria-label="Login" ng-click="toggleLeft();" style="margin-right: 50px;"></md-icon>
+      <a hide-sm href="#/store">
+        <p>Grocery Kayak</p>
+        <!--<img hide-sm class="supershop-title" src="html/img/supershop_title.png"> </img> -->    
+      </a>
+      </span>
+      <span>
+      <!--<div>
+        <table>
+          <tr>
+            <td>-->
+              <div layout-align="center" class='container-fluid' ng-controller="TypeaheadCtrl">
+                <form ng-submit="searchUserEnteredString()" >
+                  <input ui-focus="searchFocus" type="text" ng-model="searchStringEntered" placeholder="Search for groceries here!" typeahead="product as product.name for product in getTypeAheadProducts($viewValue)" typeahead-min-length="5" typeahead-wait-ms="1000" typeahead-editable="true" typeahead-on-select="selectTypeAheadItem($item, $model, $label)" typeahead-focus-first="false" typeahead-loading="loadingProducts" class="form-control supershop-search-input">
+                  <!--<i ng-show="loadingProducts" class="glyphicon glyphicon-refresh"></i>-->
+                </form>
+               </div>
+            <!--</td>
+          </tr>
+        </table>
+      </div>-->
+        <!--<md-button class="md-icon-button" aria-label="Search" ng-click="toggleSearchDisplay();searchFocus=!searchFocus;">
+          <md-icon md-svg-icon="html/img/md-icons//ic_search_48px.svg"></md-icon>
+        </md-button>-->
+      </span>
+      <span>
+      <md-icon md-svg-icon="html/img/md-icons/ic_more_vert_white_48px.svg" aria-label="More" ng-click=""></md-icon>
+      </div>
+    </span>
+    </md-toolbar>
+    <md-toolbar style="position: fixed;margin-top:62px;z-index: 1;" ng-controller="BasketTabsController" class="md-hue-1">
+    <div>
+     <md-tabs md-dynamic-height="" md-selected="selectedStore">
+      <md-tab ng-repeat="basket in baskets" md-on-select="selectStore(basket.chain, $index)" >
+        <md-tab-label>
+          <table><tr><td class="grocery-icon-{{basket.chain}}" ui-sref="store">
+            </td></tr><tr><td>   </td></tr></table>
+        </md-tab-label>
+        <md-tab-body>
+        </md-tab-body>
+      </md-tab>
+    </md-tabs>
+  </div>
+  <md-divider></md-divider>
+  <md-progress-linear ng-show="tabsDisabled" md-mode="indeterminate"></md-progress-linear>
+  </md-toolbar>
+
+<md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right" id="basket-grid">
+<div ng-controller="BasketViewCtrl">
+  <md-toolbar class="md-theme-indigo" ng-controller="RightCtrl" >
+  <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+          
+          <span><md-icon md-svg-icon="html/img/md-icons/ic_assessment_white_48px.svg" ng-click="showListBottomSheet($event)" ng-show="selectedBasketItemId != 0"></md-icon></span>
+          <p class="text-main-title-white">Basket</p>
+          <span>
+            <md-icon md-svg-icon="html/img/md-icons/ic_delete_48px.svg" ng-click="deleteFromBasket()"></md-icon>
+            <md-icon md-svg-icon="html/img/md-icons/ic_cancel_white_48px.svg" ng-click="close();clearBasket()"></md-icon>
+          </span>
+  </div>
+  </md-toolbar>
+  <md-content style="margin-left: 50px;">
+  <div layout="row" layout-margin="0">
+    <div flex="40" align="left" class="grocery-icon-{{selectedChain}}"></div>
+    <div class="item-wrapper-green general-text-title" flex="50"><div layout="row" layout-align="space-around center"><span>{{basketTotal | currency:'€'}}</span><span>({{basketItemCount}})</span></div></div>
+  </div>
+  <div style="width: 350px; min-height: 370px; max-height: 370px;">
+      <div id="basket-grid" kendo-grid="cart" k-detail-template k-options="detailGridOptions(dataItem)" k-rebind="detailGridOptions(dataItem)" k-on-change="handleSelect(data, dataItem, columns)" k-editable=true k-on-save="onSave(kendoEvent)"></div>
+  </div> 
+  <div layout="row" layout-align="space-around center" class="advice-text message-box" ng-show="selectedBasketItemId != 0">Click
+    <md-button class="md-raised md-primary" aria-label="Alternatives" ng-click="showListBottomSheet($event)">
+          <md-icon md-svg-icon="html/img/md-icons/ic_assessment_white_48px.svg"></md-icon>
+     </md-button>to compare prices</div>
+  <div layout="row" layout-align="space-around center" class="advice-text message-box" ng-show="selectedBasketItemId == 0">Swipe right to cross off item</div><br>
+  </md-content>
+ 
+</div>
+</md-sidenav>
+
+<md-sidenav class="md-sidenav-left md-whiteframe-z2" style="width: 150px;" md-component-id="left">
+<div>
+  <md-toolbar class="md-theme-indigo md-tall">
+  <div class="md-toolbar-tools" layout-align="center">
+    <p align="center">Grocery Menu</p>
+  </div>
+  </md-toolbar>
+<div layout="column" layout-fill ng-controller="MenuController">
+  <md-list ng-cloak>
+    <md-subheader class="md-no-sticky">Options</md-subheader>
+    <md-divider></md-divider>
+    <md-list-item ng-show="!isLoggedIn()" ng-click="gotoScreen('login');toggleLeft();">
+      <md-icon md-svg-icon="html/img/md-icons/ic_account_box_48px.svg"></md-icon></button>
+      <p>Login</p>
+      <md-icon md-svg-icon="html/img/md-icons/ic_chevron_right_black_48px.svg"></md-icon></button>
+      </md-list-item>
+    <md-divider></md-divider>
+    <md-list-item ng-show="isLoggedIn()" ng-click="logout();toggleLeft();">
+      <md-icon md-svg-icon="html/img/md-icons/ic_account_box_48px.svg"></md-icon></button>
+      <p>Logout</p>
+      <md-icon md-svg-icon="html/img/md-icons/ic_chevron_right_black_48px.svg"></md-icon></button>
+    </md-list-item>
+    <md-divider></md-divider>
+    <md-list-item ui-sref="store" ng-click="gotoScreen('store');toggleLeft();">
+      <md-icon md-svg-icon="html/img/md-icons/ic_local_grocery_store_black_48px.svg"></md-icon></button>
+      <p>Shop</p>
+      <md-icon md-svg-icon="html/img/md-icons/ic_chevron_right_black_48px.svg"></md-icon></button>
+    </md-list-item>
+    <md-divider></md-divider>
+    <md-list-item ng-click="setSelectedChain();toggleLeft();toggleRight();">
+      <md-icon md-svg-icon="html/img/md-icons/ic_shopping_basket_black_48px.svg"></md-icon></button>
+      <p>Basket</p>
+      <md-icon md-svg-icon="html/img/md-icons/ic_chevron_right_black_48px.svg"></md-icon></button>
+    </md-list-item>
+    <md-divider></md-divider>
+    <md-list-item ui-sref="contact_us" ng-click="gotoScreen('contact_us');toggleLeft();">
+      <md-icon md-svg-icon="html/img/md-icons/ic_email_black_48px.svg"></md-icon></button>
+      <p>Contact Us</p>
+      <md-icon md-svg-icon="html/img/md-icons/ic_chevron_right_black_48px.svg"></md-icon></button>
+    </md-list-item>
+    <md-divider></md-divider>
+    <md-list-item ui-sref="terms_and_cond" ng-click="gotoScreen('terms_and_cond');toggleLeft();">
+      <md-icon md-svg-icon="html/img/md-icons/ic_insert_drive_file_black_48px.svg"></md-icon></button>
+      <p>Terms</p>
+      <md-icon md-svg-icon="html/img/md-icons/ic_chevron_right_black_48px.svg"></md-icon></button>
+    </md-list-item>
+    <md-divider></md-divider>
+  </md-list>
+</div>
+</div>
+</md-sidenav>
+
+
+
+
+  <div ui-view="main"></div>
+  <!--<div flex></div>-->
+<!--</div>-->
+</md-content>
+
+
+</body>
+<script src="cordova.js" type="text/javascript"></script>
+<script>  
+window.arkPref = function(action, key, str, callback) {
+    var args = [key, str];
+    cordova.exec(callback, function(err) {
+        callback(err);
+    }, "SharedPref", action, args);
+};
+</script>
+
+<script type="text/javascript" src="html/vendor/please-wait/build/please-wait.js"></script>
+<script type="text/javascript">
+  window.loading_screen = window.pleaseWait({
+    logo: "html/img/grocerykayak-splash.png",
+    backgroundColor: '#308330',
+    loadingHtml: "<p class='splash-text'>A new way to grocery shop</p>"
+  });
+</script>
+    
+<script src="html/vendor/jquery/dist/jquery.min.js" type="text/javascript"></script>
+<script src="html/vendor/angular/angular.js"></script>
+<!--<script src="html/script.min.js" type="text/javascript"></script>-->
+
+     
+<!-- DEVELOPMENT INCLUDE  -->
+<script src="html/vendor/angular-ui-router/release/angular-ui-router.js" type="text/javascript"></script>
+<script src="html/vendor/placeholders/angular-placeholders-0.0.1-SNAPSHOT.min.js" type="text/javascript"></script>
+<script src="html/vendor/angular-resource/angular-resource.min.js" type="text/javascript"></script>
+<script src="html/vendor/angular-base64/angular-base64.min.js" type="text/javascript"></script>
+<script src="html/src/common/plusOne/plusOne.js" type="text/javascript"></script>
+<script src="html/src/app/app.js" type="text/javascript"></script>
+<script src="html/src/app/store/store.js" type="text/javascript"></script>
+<script src="html/src/app/about/about.js" type="text/javascript"></script>
+<script src="html/src/app/basket/basket.js" type="text/javascript"></script>
+<script src="html/src/app/account/account.js" type="text/javascript"></script>
+<script src="html/src/app/search/search.js" type="text/javascript"></script>
+<script src="html/templates-app.js" type="text/javascript"></script>
+<script src="html/templates-common.js" type="text/javascript"></script>
+<script src="html/vendor/angular-bootstrap/ui-bootstrap-tpls.js" type="text/javascript"></script>
+<script src="html/vendor/angular-animate/angular-animate.min.js" type="text/javascript"></script>
+<script src="html/vendor/angular-aria/angular-aria.js" type="text/javascript"></script>
+<!-- END DEVELOPMENT INCLUDE  -->               
+<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js" type="text/javascript"></script>-->
+<script src="html/vendor/angular-material/angular-material.min.js" type="text/javascript"></script>
+<script src="html/vendor/kendo/kendo.all.min.js"></script>
+<script src="html/vendo/kendo/kendo.culture.en-IE.min.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65759981-1', 'auto');
+  ga('send', 'pageview');
+
+  // Add 'resume' event to handle app resuming on device. 
+  document.addEventListener('resume', resume, false);
+ 
+  function resume() {
+      var div = document.getElementsByTagName('body')[0];
+      var scope = angular.element(div).scope();
+      var rootScope = scope.$root;
+      rootScope.$apply(function() {
+          rootScope.$broadcast('onResumeCordova');
+      });
+  }
+</script>
+
+<script type="text/javascript">
+     //set current to the "en-GB" culture script
+     kendo.culture("en-IE");
+
+
+</script>
+</html>

@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.company.supershop.model.ProductMVO" table="product" lazy="false">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="increment" />
+        </id>
+        <property name="productCode" type="string" insert="false" update="false">
+            <column name="product_code" />
+        </property>
+        <property name="price" type="double">
+            <column name="price" precision="17" scale="17" not-null="true" />
+        </property>
+        <property name="minPrice" type="double">
+            <column name="min_price" precision="17" scale="17" not-null="true" />
+        </property>
+        <property name="maxPrice" type="double">
+            <column name="max_price" precision="17" scale="17" not-null="true" />
+        </property>
+        <property name="lastPrice" type="double">
+            <column name="last_price" precision="17" scale="17" not-null="true" />
+        </property>
+        <property name="minPriceDate" type="date">
+            <column name="min_price_date" length="13" not-null="true" />
+        </property>
+        <property name="maxPriceDate" type="date">
+            <column name="max_price_date" length="13" not-null="true" />
+        </property>
+        <property name="lastPriceDate" type="date">
+            <column name="last_price_date" length="13" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="barcode" type="string">
+            <column name="barcode" not-null="true" />
+        </property>
+        <property name="chain" type="string">
+            <column name="chain" />
+        </property>
+        <property name="category" type="string">
+            <column name="category" not-null="true"/>
+        </property>
+        <property name="imageURL" type="string">
+            <column name="image_url" />
+        </property>
+        <property name="superDepartment" type="string">
+            <column name="super_department" />
+        </property>
+        <property name="shelfName" type="string">
+            <column name="shelf_name" />
+        </property>
+        <property name="dateCreated" type="date">
+            <column name="date_created" length="13" not-null="true" />
+        </property>
+        <property name="dateUpdated" type="date">
+            <column name="date_updated" length="13" not-null="true" />
+        </property>
+    </class>
+    
+    <query name="ProductMVO.getProductsByName">
+		<![CDATA[from ProductMVO where name like :name and date_updated > curdate()-2 order by price asc]]>
+	</query>
+	
+	<query name="ProductMVO.getCurrentProductsByChain">
+		<![CDATA[from ProductMVO where chain = :chain and date_updated > curdate()-2 order by price asc]]>
+	</query>
+	
+    <query name="ProductMVO.getAllProductsByChain">
+        <![CDATA[from ProductMVO where chain = :chain order by price asc]]>
+    </query>
+
+    <query name="ProductMVO.getProductOffersByChain">
+        <![CDATA[from ProductMVO where chain = :chain and lastPrice <> price and lastPrice <> 0 and date_updated > curdate()-2 order by (((price-last_price)/last_price)*100) asc]]>
+    </query>
+
+	<query name="ProductMVO.getProductsByNameAndChain">
+		<![CDATA[from ProductMVO where name = :name and chain = :chain order by price asc]]>
+	</query>
+	
+	<query name="ProductMVO.getShelfItems">
+		<![CDATA[from ProductMVO where chain = :chain and shelfName = :shelf and date_updated > curdate()-2 order by price asc]]>
+	</query> 
+	
+	<query name="ProductMVO.getProductById">
+		<![CDATA[from ProductMVO where id = :id]]>
+	</query>
+	
+    <query name="ProductMVO.getAvailableProducts">
+        <![CDATA[from ProductMVO where concat(name, '-', chain) in :names]]>
+    </query>
+
+	<query name="ProductMVO.getDepartments">
+		<![CDATA[select distinct superDepartment from ProductMVO where chain = :chain]]>
+	</query>
+	
+	<query name="ProductMVO.getDepartmentShelves">
+		<![CDATA[select distinct shelfName from ProductMVO where superDepartment = :department and chain = :chain]]>
+	</query>
+
+	<sql-query name="getAlternativesFast">
+    	<return class="com.company.supershop.model.ProductMVO">
+    		<return-property name="id" column="id"/>
+    		<return-property name="name" column="name"/>
+    		<return-property name="chain" column="chain"/>
+    		<return-property name="imageURL" column="image_url"/>
+        	<return-property name="superDepartment" column="super_department"/>
+        	<return-property name="shelfName" column="shelf_name"/>
+        	<return-property name="barcode" column="barcode"/>
+        	<return-property name="price" column="price"/>
+            <return-property name="minPrice" column="min_price"/>
+            <return-property name="maxPrice" column="max_price"/>
+            <return-property name="lastPrice" column="last_price"/>
+            <return-property name="minPriceDate" column="min_price_date"/>
+            <return-property name="maxPriceDate" column="max_price_date"/>
+            <return-property name="lastPriceDate" column="last_price_date"/>
+        	<return-property name="category" column="category"/>
+        	<return-property name="productCode" column="product_code"/>
+        	<return-property name="dateCreated" column="date_created"/>
+        	<return-property name="dateUpdated" column="date_updated"/>
+        </return>
+	    select id,
+	    name, 
+	    chain, 
+	    image_url, 
+	    super_department, 
+	    shelf_name, 
+	    barcode, 
+	    price, 
+        min_price,
+        max_price,
+        last_price,
+        min_price_date,
+        max_price_date,
+        last_price_date,
+	    'c' AS category,
+	    'p' AS product_code,
+	    date_created, 
+	    date_updated 
+	    from product where MATCH(name,shelf_name) 
+	    AGAINST(:productName)
+        and date_updated > CURDATE()-1 
+	    order by (MATCH(name,shelf_name) AGAINST(:productName)) desc limit 30
+	</sql-query>
+	
+	<!-- select MATCH(name,shelf_name) AGAINST('Ben & Jerrys Chocolate Fudge Brownie Ice Cream (150 Millilitre)') as score, name, chain from product where MATCH(name,shelf_name) AGAINST('Ben & Jerrys Chocolate Fudge Brownie Ice Cream (150 Millilitre)') order by score desc limit 20; -->
+
+
+</hibernate-mapping>

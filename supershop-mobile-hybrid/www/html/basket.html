@@ -1,0 +1,37 @@
+<div>
+
+
+<div ng-controller="BasketCtrl">
+
+<button type="button" class="btn btn-primary" ng-model="singleModel"
+	ng-click="viewStore()" btn-checkbox btn-checkbox-true="1"
+	btn-checkbox-false="0">Back to Store</button>
+	
+  <tabset>
+    <tab ng-repeat="basket in baskets" heading="{{basket.name}}" select="selectStore($index)" active="tab.active" >
+		<ul id="thumbnails" class="thumbnails">
+		<li class="span smart-element" ng-repeat="basketitem in basketitems">
+		<div class="thumbnail">
+			
+		<a href='#'><img class="product-image-{{basketitem.chain}}" ng-src="{{basketitem.imageUrl}}"/></a>
+		<div><strong style="font-family:arial;font-size:14px">{{basketitem.name}}</strong></div>
+		<div>
+		<br>
+		<strong class="ng-binding">{{basketitem.price}}</strong>
+		    <button type="button" class="btn btn-primary" ng-model="singleModel"
+			ng-click="deleteFromBasket($index)" btn-checkbox btn-checkbox-true="1"
+			btn-checkbox-false="0">Remove</button>
+			<i class="fa fa-trash fa-3x" ng-click="deleteFromBasket($index)"></i>
+		<div class="product-icon-{{basketitem.chain}}"></div>
+		</div>
+		</div>
+		</li>
+		</ul>
+    </tab>
+  </tabset>
+
+
+</div>
+
+
+</div>

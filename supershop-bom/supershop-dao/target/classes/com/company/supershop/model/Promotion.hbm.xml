@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.company.supershop.model.Promotion" table="promotion" lazy="false">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="increment" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="priority" type="int">
+            <column name="priority" />
+        </property>
+       <!--  <list name="promotionStrings" cascade="all" lazy="false" inverse="true" fetch="select">
+            <key column="promotion_id" not-null="true" />
+            <list-index column="id"/>
+            <one-to-many class="com.company.supershop.model.PromotionString" />
+        </list>-->
+		<bag name="promotionStrings" table="promotion_string"
+                inverse="true" lazy="false" fetch="select">
+            <key>
+                <column name="promotion_id" not-null="true" />
+            </key>
+            <one-to-many class="com.company.supershop.model.PromotionString" />
+        </bag>
+        <property name="dateCreated" type="date">
+            <column name="date_created" length="13" not-null="true" />
+        </property>
+        <property name="dateUpdated" type="date">
+            <column name="date_updated" length="13" not-null="true" />
+        </property>
+    </class>
+	
+	<query name="Promotion.findAll">
+		<![CDATA[from Promotion order by priority asc]]>
+	</query>
+	
+	<query name="Promotion.getPromotionProduct">
+		<![CDATA[from ProductMVO where name like :string and date_updated > CURDATE()-1 order by price asc]]>
+	</query>
+	
+</hibernate-mapping>
