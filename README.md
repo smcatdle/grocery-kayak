@@ -6,10 +6,14 @@ The micro-services for the server backend are written in Java and the customer A
 Java 1.7 or higher is recommended.
 
 
+
+
 Google Play Store :
 --------------------
 
 https://play.google.com/store/apps/details?id=com.grocerykayak&gl=IE
+
+
 
 
 
