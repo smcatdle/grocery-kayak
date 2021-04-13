@@ -1,7 +1,7 @@
 # 
 An open source implementation of a supermarket delivery system for the Irish market. (Released under LGPL. The GNU Lesser General Public License )
 
-This is the Irish version of popular mySupermarket.co.uk.
+This is the Irish equivalent of the popular portal site mySupermarket.co.uk.
 
 
 The micro-services for the server backend are written in Java and the customer Android app is written in Cordova AngularJS.
