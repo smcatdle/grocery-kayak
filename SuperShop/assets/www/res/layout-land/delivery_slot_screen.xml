@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffe6f2f7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/amend_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@id/amend" layout="@layout/amend_order_view" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/delslot_header_lay" android:background="@drawable/screen_title_bar" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#ff333333" android:layout_gravity="center" android:id="@id/delslot_sub_header_title" android:paddingLeft="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delivery_slot_lbl" />
+        <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="normal" android:textColor="#ff333333" android:id="@id/lastorder_qty" android:paddingLeft="9.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/deliveryslot_mainlay" android:background="@drawable/exp_grlistitem_selector" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/deliveryslot_innerlay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/dark_text_blue" android:id="@id/slot_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="90.0dip" android:text="@string/deliveryslot" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:typeface="sans" android:textColor="@color/unavail_color" android:id="@id/slot_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="90.0dip" android:text="7 Dec 8am - 10am" android:singleLine="true" android:shadowColor="@color/unitprice_shadow" android:layout_below="@id/slot_label" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/deliverto_mainlay" android:background="@drawable/exp_grlistitem_selector" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_below="@id/deliveryslot_mainlay">
+        <RelativeLayout android:id="@id/deliverto_innerlay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/dark_text_blue" android:id="@id/deliver_to" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="90.0dip" android:text="@string/deliver_to_lbl" android:singleLine="true" />
+            <TextView android:textSize="12.0sp" android:typeface="sans" android:textColor="@color/unavail_color" android:id="@id/deliverto_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="90.0dip" android:text="" android:singleLine="true" android:shadowColor="@color/unitprice_shadow" android:layout_below="@id/deliver_to" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/add_address_lay" android:background="@drawable/exp_grlistitem_selector" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_below="@id/deliverto_mainlay">
+        <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/dark_text_blue" android:id="@id/add_new_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="90.0dip" android:text="@string/add_address_lbl" android:singleLine="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,26 @@
+.br .microsite .micro-reviews {
+  width: 29%;
+}
+.br .microsite .micro-rates {
+  width: 19%;
+}
+.br .microsite .property-heading h2 {
+  width: 71%;
+}
+.br .property-heading .link-btn {
+  font-size: 12px;
+  padding: 4px 4px;
+}
+.br .property-heading .price {
+  text-align: right;
+}
+.br input#city {
+  font-size: 16px;
+  padding: 7px 0;
+}
+.br input[name="card_cvv"] {
+  width: 99%;
+}
+.br .with-label {
+  font-size: 17px;
+}

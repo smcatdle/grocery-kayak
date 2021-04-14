@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/amend_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@id/amend" layout="@layout/amend_order_view" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/drop_down_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="44.0dip" android:layout_above="@id/amend_layout">
+        <LinearLayout android:orientation="horizontal" android:id="@id/search_layout" android:background="@drawable/search_bar_menu" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:layout_gravity="center_vertical" android:id="@id/search_edittext" android:background="@drawable/dropdown_edittext_selector" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:hint="Search" android:cursorVisible="false" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageView android:id="@id/search_divider_voice" android:background="@drawable/search_bar_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/voice_icon" />
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/voice_icon" android:background="@drawable/icon_voice_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/search_divider_barcode" android:background="@drawable/search_bar_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" />
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/barcode_icon" android:background="@drawable/icon_barcode_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <ListView android:id="@id/options_listview" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@*android:color/transparent" android:dividerHeight="0.0dip" />
+    </LinearLayout>
+</RelativeLayout>

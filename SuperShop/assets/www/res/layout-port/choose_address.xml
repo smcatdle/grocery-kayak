@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/amend_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include android:id="@id/amend" layout="@layout/amend_order_view" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/cc_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/book_slot_choose_add_lay" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/gray" android:id="@id/choose_add_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.669983dip" android:text="@string/choose_address_msg" />
+            <View android:id="@id/choose_add_msg_divider" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.3299866dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/postcode_lay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="16.0sp" android:textStyle="normal" android:textColor="@color/gray" android:id="@id/address_srch_postcode" android:background="@drawable/edit_background_selector" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/search_by_postcode" android:singleLine="true" android:layout_weight="1.0" />
+                <ImageButton android:id="@id/address_srch_img" android:background="@drawable/search_postcode_selector" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/dark_text_blue" android:gravity="bottom" android:id="@id/or_choose_address" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/or_choose_address_lbl" />
+            <View android:id="@id/or_choose_addres_divider" android:background="@color/dark_text_blue" android:layout_width="fill_parent" android:layout_height="2.6599731dip" />
+        </LinearLayout>
+        <ListView android:scrollbarStyle="outsideOverlay" android:id="@id/address_list_data" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/gray" android:dividerHeight="1.3299866dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/no_add_new_address_lay" android:background="@drawable/cc_selector" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:typeface="normal" android:textStyle="normal" android:textColor="@color/gray" android:id="@id/no_add_new_address_textview" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/add_address_lbl" android:singleLine="true" />
+            <ImageView android:id="@id/choose_address_row_divider" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.3299866dip" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/no_address_lay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0sp" android:textColor="@color/unavail_color" android:gravity="center_horizontal" android:id="@id/no_address_msg" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/address_empty_msg" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <Button android:textSize="14.0sp" android:textColor="@color/unavail_color" android:id="@id/no_address_btn" android:background="@drawable/cc_btn_selector" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/try_btn" android:layout_below="@id/no_address_msg" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

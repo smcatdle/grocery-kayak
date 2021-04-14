@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffe6f2f7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/shoptitle_lay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/shop_title" android:background="@drawable/shopping_list_header" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/additem_btn" android:background="@drawable/add_item_btn_drawable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <EditText android:textColor="#ff000000" android:id="@id/additem_et" android:background="@drawable/listitem_selector" android:paddingLeft="60.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:imeOptions="actionDone" android:imeActionLabel="@string/add_btn" />
+    <LinearLayout android:orientation="vertical" android:id="@id/demo_lay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/demo_chk_lay" android:background="@drawable/listitem_selector" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/demo_chkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:button="@drawable/box_unticked" />
+            <TextView android:textSize="16.0dip" android:typeface="sans" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/demo_chk_title" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="Milk" />
+        </LinearLayout>
+        <ImageView android:textColor="#ff000000" android:id="@id/demo_desc" android:background="@drawable/shopping_list_hint_item" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:background="@drawable/shopping_list_footer" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" />
+    </LinearLayout>
+    <ListView android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@id/shop_list" android:background="#ffe6f2f7" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:listSelector="@*android:color/transparent" android:stackFromBottom="false" android:divider="@*android:color/transparent" android:dividerHeight="1.0px" android:footerDividersEnabled="true" />
+</LinearLayout>

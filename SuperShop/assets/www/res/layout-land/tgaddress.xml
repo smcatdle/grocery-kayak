@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffe6f2f7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/address_header_lay" android:background="@drawable/screen_title_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/sub_header_color" android:layout_gravity="center_vertical" android:id="@id/address_header_title" android:paddingLeft="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/address_lbl" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/amend_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@id/amend" layout="@layout/amend_order_view" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/amend_layout">
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/section_0_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="9.0dip">
+                    <TextView android:textSize="18.0sp" android:id="@id/postcode_data" android:background="@drawable/searchbox_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Postcode" android:scrollHorizontally="true" android:singleLine="true" android:drawableLeft="@drawable/search_history_icon_s1" android:drawablePadding="5.0dip" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/section_1_lay" android:background="@color/unitprice_shadow" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_below="@id/section_0_lay">
+                    <RelativeLayout android:id="@id/house_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="9.0dip">
+                        <TextView android:textSize="15.0sp" android:typeface="sans" android:textColor="@color/black" android:id="@id/house_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="71.0dip" android:text="House" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <EditText android:id="@id/house_editext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Number/Name" android:cursorVisible="false" android:scrollHorizontally="true" android:singleLine="true" android:editable="false" android:layout_toRightOf="@id/house_textview" />
+                    </RelativeLayout>
+                    <EditText android:id="@id/street_edittext" android:background="@drawable/shop_search_input_active" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="9.0dip" android:hint="Street,Town/City" android:scrollHorizontally="true" android:singleLine="true" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/section_2_lay" android:background="@color/unitprice_shadow" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_below="@id/section_1_lay">
+                    <RelativeLayout android:id="@id/property_type_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="9.0dip">
+                        <TextView android:textSize="15.0sp" android:typeface="sans" android:textColor="@color/black" android:id="@id/property_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="Property Type" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <EditText android:id="@id/property_type_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Select" android:cursorVisible="false" android:scrollHorizontally="true" android:singleLine="true" android:editable="false" android:layout_toRightOf="@id/property_textview" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/nickname_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="9.0dip">
+                        <TextView android:textSize="15.0sp" android:typeface="sans" android:textColor="@color/black" android:id="@id/nickname_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="46.0dip" android:text="Nickname" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <EditText android:id="@id/nickname_edittext" android:background="@drawable/searchbox_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Enter" android:scrollHorizontally="true" android:singleLine="true" android:layout_toRightOf="@id/nickname_textview" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/section_3_lay" android:background="@color/unitprice_shadow" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_below="@id/section_2_lay">
+                    <RelativeLayout android:id="@id/telephone_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="9.0dip">
+                        <TextView android:textSize="15.0sp" android:typeface="sans" android:textColor="@color/black" android:id="@id/telephone_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="42.0dip" android:text="Telephone" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <EditText android:id="@id/telephone_edittext" android:background="@drawable/searchbox_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Number" android:scrollHorizontally="true" android:singleLine="true" android:layout_toRightOf="@id/telephone_textview" android:inputType="phone" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/alternative_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="9.0dip">
+                        <TextView android:textSize="15.0sp" android:typeface="sans" android:textColor="@color/black" android:id="@id/alternative_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" android:text="Alternative" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <EditText android:id="@id/alternative_edittext" android:background="@drawable/searchbox_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Number" android:scrollHorizontally="true" android:singleLine="true" android:layout_toRightOf="@id/alternative_textview" android:inputType="phone" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/mobile_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="9.0dip">
+                        <TextView android:textSize="15.0sp" android:typeface="sans" android:textColor="@color/black" android:id="@id/mobile_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="68.0dip" android:text="Mobile" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                        <EditText android:id="@id/mobile_edittext" android:background="@drawable/searchbox_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Number" android:scrollHorizontally="true" android:singleLine="true" android:layout_toRightOf="@id/mobile_textview" android:inputType="phone" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/section_4_lay" android:paddingTop="9.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_below="@id/section_3_lay">
+                    <Button android:typeface="sans" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/save_btn" android:background="@drawable/btn_selector" android:layout_width="130.0dip" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="Save" />
+                    <Button android:typeface="sans" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/cancel_btn" android:background="@drawable/btn_selector" android:layout_width="130.0dip" android:layout_height="wrap_content" android:text="Cancel" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+        <RelativeLayout android:id="@id/postcode_lay" android:background="#80000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:id="@id/postcode_edittext" android:background="@drawable/searchbox_selector" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="9.0dip" android:hint="Postcode" android:scrollHorizontally="true" android:singleLine="true" android:drawableLeft="@drawable/search_history_icon_s1" android:drawablePadding="5.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

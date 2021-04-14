@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/footer_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:id="@id/amend_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include android:id="@id/amend" layout="@layout/amend_order_view" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/signin_layout_footer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include android:id="@id/signin_anon_footer" layout="@layout/signin_footer" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/footer_layout">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/screen_title_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/sub_header_color" android:id="@id/sub_header_title" android:paddingLeft="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Product Details" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/prod_row_lay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/item" layout="@layout/tgproductrowdata" />
+            <ImageView android:background="@color/blue_divider_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/fullimage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip" />
+                <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/sub_header_color" android:gravity="center_vertical" android:id="@id/sub_header_carboninfo" android:background="@drawable/screen_title_bar" android:paddingLeft="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Carbon Footprint" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:id="@id/footimg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center_horizontal" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="working with the Carbon Trust" />
+                            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/fullimage" android:background="@drawable/foot_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                                <TextView android:textSize="14.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:text="7.5Kg" />
+                                <TextView android:textSize="14.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="40.0dip" android:text="CO2" />
+                            </LinearLayout>
+                            <TextView android:textSize="14.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center_horizontal" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="per 1000 hrs of use" />
+                            <TextView android:textSize="12.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/dark_text_blue" android:gravity="center_horizontal" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:text="Find out more" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/foottext" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="The carbon foot print of this product is 7.5kg per bulb per 1000 hours of use and we have committed to reduce the footprint of future equivalent light bulbs." />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:text=" By comparison the footprint for the equivalent conventional lightbulb (60W) is 36kg per 1000 hours use." />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/nutrition_lay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/sub_header_color" android:gravity="center_vertical" android:id="@id/sub_header_nutrition" android:background="@drawable/screen_title_bar" android:paddingLeft="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pro_detail_lbl" />
+                    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/nutr_percentage" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="70.0dip" android:layout_marginTop="10.0dip">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/calorie" android:background="@drawable/nutrition_calories" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip">
+                            <TextView android:textSize="10.0sp" android:typeface="sans" android:textColor="@color/sub_header_color" android:id="@id/nutri_cal_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Calories" />
+                            <TextView android:textSize="10.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/sub_header_color" android:id="@id/nutri_cal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="34" />
+                            <TextView android:textSize="10.0sp" android:typeface="sans" android:textColor="@color/sub_header_color" android:id="@id/nutri_cal_per" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="34" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/sugar" android:background="@drawable/nutrition_sugar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_toRightOf="@id/calorie">
+                            <TextView android:textSize="10.0sp" android:typeface="sans" android:textColor="@color/sub_header_color" android:id="@id/nutri_sugar_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Sugar" />
+                            <TextView android:textSize="10.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/sub_header_color" android:id="@id/nutri_sugar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="34" />
+                            <TextView android:textSize="10.0sp" android:typeface="sans" android:textColor="@color/sub_header_color" android:id="@id/nutri_sugar_per" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="34" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/fat" android:background="@drawable/nutrition_fat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_toRightOf="@id/sugar">
+                            <TextView android:textSize="10.0sp" android:typeface="sans" android:textColor="@color/sub_header_color" android:id="@id/nutri_fat_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Fat" />
+                            <TextView android:textSize="10.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/sub_header_color" android:id="@id/nutri_fat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="34" />
+                            <TextView android:textSize="10.0sp" android:typeface="sans" android:textColor="@color/sub_header_color" android:id="@id/nutri_fat_per" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="34" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/saturate" android:background="@drawable/nutrition_saturates" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_toRightOf="@id/fat">
+                            <TextView android:textSize="10.0sp" android:typeface="sans" android:textColor="@color/sub_header_color" android:id="@id/nutri_sat_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Saturates" />
+                            <TextView android:textSize="10.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/sub_header_color" android:id="@id/nutri_sat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="34" />
+                            <TextView android:textSize="10.0sp" android:typeface="sans" android:textColor="@color/sub_header_color" android:id="@id/nutri_sat_per" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="34" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/salt" android:background="@drawable/nutrition_salt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_toRightOf="@id/saturate">
+                            <TextView android:textSize="10.0sp" android:typeface="sans" android:textColor="@color/sub_header_color" android:id="@id/nutri_salt_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Salt" />
+                            <TextView android:textSize="10.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/sub_header_color" android:id="@id/nutri_salt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:text="34" />
+                            <TextView android:textSize="10.0sp" android:typeface="sans" android:textColor="@color/sub_header_color" android:id="@id/nutri_salt_per" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="34" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <TextView android:textSize="12.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/unavail_color" android:id="@id/nutri_extendinfo" android:paddingLeft="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ingredients_lay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/sub_header_color" android:gravity="center_vertical" android:id="@id/sub_header_ingredients" android:background="@drawable/screen_title_bar" android:paddingLeft="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Ingredients" />
+                    <TextView android:typeface="sans" android:textColor="@color/unavail_color" android:id="@id/ingredients_text" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="Ingredients detail" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/storage_lay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/sub_header_color" android:gravity="center_vertical" android:id="@id/storage_header" android:background="@drawable/screen_title_bar" android:paddingLeft="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Storage Info" />
+                    <TextView android:typeface="sans" android:textColor="@color/unavail_color" android:id="@id/storage_text" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="Storage detail" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

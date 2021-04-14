@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/listrowdata_lay" android:background="@drawable/listitem_selector" android:layout_width="fill_parent" android:layout_height="59.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:layout_gravity="center" android:id="@id/shop_chkbox" android:background="@drawable/box_unticked" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:button="@drawable/shoplist_checkbox_selector" android:textOn="" android:textOff="" />
+    <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#ff333333" android:layout_gravity="center" android:id="@id/item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="Apple" android:singleLine="true" />
+</LinearLayout>

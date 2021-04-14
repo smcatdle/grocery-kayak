@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/add_new_address_lay" android:background="@drawable/cc_selector" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/address_list">
+        <TextView android:textSize="18.0sp" android:typeface="normal" android:textStyle="normal" android:textColor="@color/gray" android:id="@id/add_new_address_textview" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/add_address_lbl" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/choose_address_row_divider" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.3299866dip" android:layout_below="@id/add_new_address_lay" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="280.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/popup_header_layout" android:background="@drawable/popup_top_normal_s1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/header_icon" android:background="@drawable/popup_title_icon_s1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="22.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#ff004591" android:id="@id/header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/shop_list_title" android:layout_toRightOf="@id/header_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/remove_all_layout" android:background="@drawable/context_menu_middle_selector" android:focusable="true" android:nextFocusDown="@id/remove_ticked_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:typeface="sans" android:textColor="#ff004591" android:id="@id/remove_all_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/remove_all" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/remove_ticked_layout" android:background="@drawable/context_menu_middle_selector" android:focusable="true" android:nextFocusUp="@id/remove_all_layout" android:nextFocusDown="@id/untick_all_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:typeface="sans" android:textColor="#ff004591" android:id="@id/remove_ticked_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/remove_tick" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/untick_all_layout" android:background="@drawable/context_menu_bottom_selector" android:focusable="true" android:nextFocusUp="@id/remove_ticked_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:typeface="sans" android:textColor="#ff004591" android:id="@id/untick_all_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/untick_all" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

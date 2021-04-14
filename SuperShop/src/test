@@ -1,0 +1,30 @@
+			  '<TR>' 
+			   '<TD>' + 
+			    '<TABLE>' +
+			     '<TR>' + 
+			       '<TD>' +
+			         '<SPAN style=\"font-weight: bold;font-size: 14px; \"><a href=\"#priceComparePopup\" data-rel=\"popup\" data-role=\"button\" data-inline=\"true\" data-transition=\"slideup\" data-icon=\"gear\" data-theme=\"e\"></a>' +'&euro;' + price +
+				     '</SPAN>' +
+				   '</TD>' + 
+				  '</TR>' +
+				  '<TR>' +
+				    '<TD><LABEL style=\"font-size: 14px;\"> ' + promotionText + '</LABEL>' +
+				    '</TD>' + 
+				  '</TR>' +
+				 '</TABLE>' + 
+				'</TD>' +
+			   '</TR>' +
+				'<TD><a href=\"#dialogPage\" data-role=\"button\" data-transition=\"pop\"><img align=\"left\" src=\"' + imageURL + '\" alt=\"image\" />' +
+				'</TD>' +
+			  '</TR>' +
+			  
+			  
+			  
+			  			    '<TABLE>' +
+			     '<TR>' + 
+			       '<TD>' +
+			       '</TD>' +
+				   '<TD><a href=\"#dialogPage\" data-role=\"button\" data-transition=\"pop\"><img align=\"left\" src=\"' + imageURL + '\" alt=\"image\" />' +
+				   '</TD>' +
+				  '</TR>' +
+				'</TABLE>' +

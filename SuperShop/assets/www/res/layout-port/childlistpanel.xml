@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/exp_child_lay" android:background="@drawable/exp_chlidlistitem_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#ff004591" android:layout_gravity="center_vertical" android:id="@id/time_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="8am - 10am" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/book_price_lay" android:background="@drawable/explist_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip">
+            <TextView android:textSize="14.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/del_price_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="2.55" android:shadowColor="#ff003079" android:shadowDy="-1.0" />
+            <TextView android:textSize="10.0sp" android:typeface="sans" android:textColor="#ffc3d4e6" android:id="@id/del_book_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Book" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:background="#ffbcd3e9" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

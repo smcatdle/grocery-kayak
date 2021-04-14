@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!--  <link rel="stylesheet" type="text/css" href="css/index.css" />-->
+        <link href="css/jquery.mobile-1.0rc1.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="css/theme.css" />
+        <link rel="stylesheet" type="text/css" href="css/general.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/fd_slider.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles-pt_BR.css" />
+        <link rel="stylesheet" href="kalendae.css" type="text/css" charset="utf-8">
+		<script src="js/kalendae.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.6.4.js"></script>
+		<script src="js/jquery.mobile-1.0rc1.min.js"></script>
+		<script type="text/javascript" src="js/cordova-2.4.0.js"></script>
+		<script src="js/billPersistence.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/addPreviousBill.js" type="text/javascript" charset="utf-8"></script>
+        
+       
+        <title>Add Previous Bill</title>
+    </head>
+    <body>
+		
+		<div data-role="page" id="editTaskPage">
+
+			<div data-role="header">
+				<h1>Enter Most Recent Bill</h1>
+			</div>
+		
+			<div data-role="content">
+				<form id="taskForm" method="post">
+					<div data-role="fieldcontain">
+						<label for="currentDayReading">Current Day Reading</label> <input type="text"
+							name="currentDayReading" id="currentDayReading">
+					</div>
+					<div data-role="fieldcontain">
+						<label for="currentNightReading">Current Night Reading</label> <input type="text"
+							name="currentNightReading" id="currentNightReading">
+					</div>
+					<div data-role="fieldcontain">
+						<label for="billDate">Ending Bill Date</label><input type="text"
+							name="billDate" id="billDate">
+					</div>
+					
+					
+				</form>
+			</div>
+		
+			<div data-role="footer" align="right">
+				<a href="addPreviousBill.html" onclick="addPreviousBill()">Save</a>
+				<a href="index.html">Cancel</a>
+			</div>
+		
+		</div>
+
+    </body>
+</html>

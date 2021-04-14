@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/search_main_lay" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/header" layout="@layout/tgsearchheader" />
+    <LinearLayout android:orientation="vertical" android:id="@id/footer_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:id="@id/amend_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include android:id="@id/amend" layout="@layout/amend_order_view" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/signin_layout_footer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include android:id="@id/signin_anon_footer" layout="@layout/signin_footer" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/header_layout" android:background="@drawable/screen_title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/header">
+        <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/sub_header_color" android:id="@id/sub_header_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/search_history_lbl" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/list_lay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/footer_layout" android:layout_below="@id/header_layout">
+        <ListView android:id="@id/search_history_list" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#ffbcd3e9" android:dividerHeight="1.0px" />
+        <TextView android:typeface="sans" android:textStyle="normal" android:textColor="@color/unavail_color" android:layout_gravity="center" android:id="@id/empty_search_history" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_search_history" />
+    </LinearLayout>
+</RelativeLayout>

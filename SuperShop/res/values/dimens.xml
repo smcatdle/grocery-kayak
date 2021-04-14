@@ -1,0 +1,8 @@
+<resources >
+    
+    <dimen name="paddingTop">0dp</dimen>
+    <dimen name="paddingBottom">0dp</dimen>
+    <dimen name="paddingLeft">0dp</dimen>
+    <dimen name="paddingRight">0dp</dimen>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/depart_parent_lay" android:background="@drawable/exp_grlistitem_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:id="@id/exp_group_lay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#ff004591" android:gravity="center_vertical" android:id="@id/department_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="hello" />
+        </LinearLayout>
+        <ImageView android:id="@id/exp_arrow_img" android:background="@drawable/list_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" />
+    </LinearLayout>
+    <ImageView android:background="#ffbcd3e9" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

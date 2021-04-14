@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/amend_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@id/amend" layout="@layout/amend_order_view" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/amend_layout">
+        <ListView android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@id/justchking_list" android:background="@color/white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:stackFromBottom="false" android:divider="#ffbcd3e9" android:dividerHeight="1.0px" android:layout_alignParentLeft="true" android:fastScrollEnabled="true" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+    </LinearLayout>
+</RelativeLayout>

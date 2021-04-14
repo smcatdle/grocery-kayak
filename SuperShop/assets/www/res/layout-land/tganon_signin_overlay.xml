@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/sign_in_panel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="16.0dip">
+            <ImageView android:id="@id/tesco_signin_logo" android:background="@drawable/sign_in_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:id="@id/signin_dividerline" android:background="@color/dark_text_blue" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <EditText android:textSize="18.0sp" android:typeface="sans" android:textColorHint="@color/gray" android:id="@id/signin_emailid" android:background="@drawable/edit_background_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="16.0dip" android:hint="@string/user_name" android:singleLine="true" />
+        <EditText android:textSize="18.0sp" android:typeface="sans" android:textColorHint="@color/gray" android:id="@id/signin_password" android:background="@drawable/edit_background_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="21.0dip" android:layout_marginRight="16.0dip" android:hint="@string/password" android:singleLine="true" android:inputType="textPassword" />
+        <TextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="@color/dark_text_blue" android:id="@id/signin_forgot_psw" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="54.0dip" android:text="Forgot your password?" />
+        <ImageView android:id="@id/btn_divider" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="20.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="16.0sp" android:textColor="@color/dark_text_blue" android:id="@id/signin_register_btn" android:background="@drawable/anon_signinoverlay_btn_selector" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="@string/anon_register" android:layout_weight="0.5" />
+            <ImageView android:background="@color/gray" android:layout_width="1.0dip" android:layout_height="45.0dip" android:layout_marginTop="3.0dip" />
+            <Button android:textSize="16.0sp" android:textColor="@color/dark_text_blue" android:id="@id/anon_signin_btn" android:background="@drawable/anon_signinoverlay_btn_selector" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="@string/anon_signin" android:layout_weight="0.5" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

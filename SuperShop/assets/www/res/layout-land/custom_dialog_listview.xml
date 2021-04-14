@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dialog_box_background" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/popup_header_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/header_icon" android:background="@drawable/popup_title_icon_s1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <TextView android:textSize="22.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#ff004591" android:id="@id/header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/choose_an_address" android:layout_toRightOf="@id/header_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/header_divider" android:background="#ffe6f2f7" android:layout_width="fill_parent" android:layout_height="1.0sp" android:layout_marginTop="15.0dip" android:layout_below="@id/popup_header_layout" />
+    <ListView android:id="@id/listview" android:background="#ffe6f2f7" android:scrollbars="none" android:fadingEdge="none" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="#ffe6f2f7" android:dividerHeight="1.0sp" android:layout_below="@id/header_divider" android:layout_centerInParent="true" />
+</RelativeLayout>

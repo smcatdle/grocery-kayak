@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffffffff" android:padding="30.0dip" android:layout_width="250.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#ff004591" android:id="@id/remove_item_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/remove_item_msg" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:typeface="sans" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/yes_btn" android:background="@drawable/btn_selector" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/yes_btn" />
+        <Button android:typeface="sans" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/no_btn" android:background="@drawable/btn_selector" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="@string/no_btn" />
+    </LinearLayout>
+</LinearLayout>

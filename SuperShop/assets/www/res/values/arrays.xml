@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="titlevalues">
+        <item>Home</item>
+        <item>Slot Booked</item>
+        <item>Orders</item>
+        <item>Favourites</item>
+        <item>Shop</item>
+        <item>Basket</item>
+        <item>Checkout</item>
+    </string-array>
+    <string-array name="dropdownlist">
+        <item>Groceries Home</item>
+        <item>Book a slot</item>
+        <item>Favourites</item>
+        <item>Shop</item>
+        <item>Basket</item>
+        <item>Orders</item>
+        <item>Checkout</item>
+    </string-array>
+    <string-array name="nativeappslist">
+        <item>Groceries</item>
+        <item>Clubcard</item>
+    </string-array>
+    <string-array name="cc_title">
+        <item>Mr</item>
+        <item>Mrs</item>
+        <item>Miss</item>
+        <item>Ms</item>
+        <item>Dr</item>
+        <item>Other</item>
+    </string-array>
+</resources>

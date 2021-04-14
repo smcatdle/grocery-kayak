@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="abs__background_holo_dark">#ff000000</color>
+    <color name="abs__background_holo_light">#fff3f3f3</color>
+    <item type="color" name="abs__bright_foreground_holo_dark">@color/abs__background_holo_light</item>
+    <item type="color" name="abs__bright_foreground_holo_light">@color/abs__background_holo_dark</item>
+    <color name="abs__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="abs__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <item type="color" name="abs__bright_foreground_inverse_holo_dark">@color/abs__bright_foreground_holo_light</item>
+    <item type="color" name="abs__bright_foreground_inverse_holo_light">@color/abs__bright_foreground_holo_dark</item>
+    <color name="abs__holo_blue_light">#ff33b5e5</color>
+    <color name="white">#ffffffff</color>
+    <color name="item_text_blue">#ff5f8aba</color>
+    <color name="text_tab_selected">#ff333333</color>
+    <color name="text_tab_unselected">#ff004591</color>
+    <color name="gray_color">#ff4e4e4e</color>
+    <color name="shop_chk_color">#ffbcbc9c</color>
+    <color name="shop_unchk_color">#ff333333</color>
+    <color name="signin_shadow_color">#fff6fafc</color>
+    <color name="sub_header_color">#ff333333</color>
+    <color name="dark_text_blue">#ff00539f</color>
+    <color name="blue_divider_line">#ffe6f2f7</color>
+    <color name="unitprice_shadow">#ffffffff</color>
+    <color name="unavail_color">#ff666666</color>
+    <color name="transparent">#00000000</color>
+    <color name="add_text_color">#8585a8cc</color>
+    <color name="remove_text_color">#9898cf8b</color>
+    <color name="home_option_text_color">#ff004591</color>
+    <color name="home_option_disabled_text_color">#ff666666</color>
+    <color name="blackish">#00000000</color>
+    <color name="black">#ff000000</color>
+    <color name="translucent_black">#80000000</color>
+    <color name="red">#ffee1c2e</color>
+    <color name="disabled_color">#ff888888</color>
+    <color name="disabled_color_signin">#ff919191</color>
+    <color name="dropdown_background">#ffffffff</color>
+    <color name="gray">#ff777777</color>
+    <color name="text_title">#ff222222</color>
+    <color name="tab_color">#ffebebeb</color>
+    <color name="bluetext_color">#ff00539f</color>
+    <color name="redtext_color">#ffee1c2e</color>
+    <color name="anon_home_text">#ffb2c7de</color>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/basket_lay" android:background="@drawable/exp_grlistitem_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/redtext_color" android:id="@id/pro_bsk_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="chgch vhgvgv vbjhbjhbuh bhjbuhjh bjhbiybiy biihbibiib bihbihb" android:singleLine="false" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:id="@id/exp_group_lay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="20.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/pro_cnt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="1" />
+                <TextView android:textSize="14.0sp" android:typeface="sans" android:textStyle="normal" android:textColor="#ff999999" android:id="@id/pro_mul_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="x" />
+                <TextView android:textSize="14.0sp" android:typeface="sans" android:textStyle="normal" android:textColor="@color/dark_text_blue" android:id="@id/pro_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+                <TextView android:textSize="18.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#ff333333" android:id="@id/total_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="524.55" android:shadowColor="@color/dark_text_blue" android:shadowDy="-1.0" android:layout_alignParentRight="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

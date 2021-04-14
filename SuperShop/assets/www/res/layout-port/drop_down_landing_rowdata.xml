@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_lay" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/inner_lay" android:paddingLeft="6.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/inner_app_lay" android:layout_width="225.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="18.0dip" android:typeface="sans" android:textStyle="bold" android:textColor="@color/dark_text_blue" android:id="@id/app_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+            <TextView android:textSize="18.0dip" android:typeface="sans" android:textStyle="bold" android:textColor="@color/unavail_color" android:id="@id/customer_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="14.0dip" android:typeface="sans" android:textColor="@color/unavail_color" android:layout_gravity="center_vertical" android:id="@id/info_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

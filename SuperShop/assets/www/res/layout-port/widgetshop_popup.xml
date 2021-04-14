@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_box_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="20.0sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_item_title" />
+        <EditText android:id="@id/item_et" android:background="@drawable/input_field_drawable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:scrollHorizontally="true" android:singleLine="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <Button android:textStyle="bold" android:textColor="@color/unitprice_shadow" android:id="@id/add_btn" android:background="@drawable/btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="@string/add_btn" android:layout_weight="1.0" />
+            <Button android:textStyle="bold" android:textColor="@color/unitprice_shadow" android:id="@id/cancel_btn" android:background="@drawable/btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_cancel" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

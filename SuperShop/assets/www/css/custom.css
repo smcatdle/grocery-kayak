@@ -1,0 +1,208 @@
+#load_container {
+	display:none;
+}
+#loader {
+	display:none;
+}
+
+#wrapper > div.slideinfromleft,
+#wrapper > div.slideinfromright,
+#wrapper > div.slideoutleft,
+#wrapper > div.slideoutright,
+#wrapper > div.slidemodalup,
+#wrapper > div.slidemodaldown  {
+	-webkit-backface-visibility: hidden;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 400ms;
+	-webkit-animation-fill-mode: forwards; /* check if this property works in iPhone 3.*/
+}
+
+#wrapper > div.slidemodalup {
+	-webkit-animation-name: slidemodalup;
+}
+
+#wrapper > div.slidemodaldown {
+	-webkit-animation-name: slidemodaldown;
+}
+
+#wrapper > div.slideinfromleft {
+	-webkit-animation-name: slideinfromleft;
+}
+
+#wrapper > div.slideinfromright {
+	-webkit-animation-name: slideinfromright;
+}
+
+#wrapper > div.slideoutleft {
+	-webkit-animation-name: slideoutleft;
+}
+
+#wrapper > div.slideoutright {
+	-webkit-animation-name: slideoutright;
+}
+
+#wrapper > div.closeStatic {
+	display: none;
+}
+
+#wrapper > div.showStatic {
+	display: block;
+}
+
+#platform-nav-inside.slideout {
+	-webkit-animation-timing-function:ease-out;
+    -webkit-animation-duration:400ms;
+	-webkit-animation-fill-mode:none;
+	-webkit-animation-name:slidecircular;
+}
+
+#platform-nav-inside.slidein {
+	-webkit-animation-timing-function:ease-out;
+    -webkit-animation-duration:400ms;
+	-webkit-animation-fill-mode:none;
+	-webkit-animation-name:slidecircularreverse;
+}
+
+@-webkit-keyframes slidemodalup {
+    from { -webkit-transform:translate3d(0,100%,0); }
+    to { -webkit-transform:translate3d(0,0,0);}
+}
+
+@-webkit-keyframes slidemodaldown {
+    from { -webkit-transform:translate3d(0,0,0); }
+    to { -webkit-transform:translate3d(0,100%,0);}
+}
+
+@-webkit-keyframes slideinfromleft {
+    from { -webkit-transform:translate3d(-100%,0,0); }
+    to { -webkit-transform:translate3d(0,0,0);}
+}
+
+@-webkit-keyframes slideinfromright {
+    from { -webkit-transform:translate3d(100%,0,0); }
+    to { -webkit-transform:translate3d(0,0,0);}
+}
+
+@-webkit-keyframes slideoutright {
+    from { -webkit-transform:translate3d(0,0,0); }
+    to { -webkit-transform:translate3d(100%,0,0);}
+}
+
+@-webkit-keyframes slideoutleft {
+    from { -webkit-transform: translate3d(0,0,0); }
+    to { -webkit-transform: translate3d(-100%,0,0);}
+}
+
+@-webkit-keyframes slidecircular {
+    0% { -webkit-transform: translate3d(0,0,0); opacity:1}
+    45% { -webkit-transform: translate3d(-100%,0,0); opacity:0}
+	55% { -webkit-transform: translate3d(100%,0,0); opacity:0}
+	100% { -webkit-transform: translate3d(0,0,0); opacity:1}
+}
+
+@-webkit-keyframes slidecircularreverse {
+    0% { -webkit-transform: translate3d(0,0,0); opacity:1}
+    45% { -webkit-transform: translate3d(100%,0,0); opacity:0}
+	55% { -webkit-transform: translate3d(-100%,0,0); opacity:0}
+	100% { -webkit-transform: translate3d(0,0,0); opacity:1}
+}
+
+/*Spinning wheel CSS */
+#sw-wrapper {
+	position:absolute;
+	z-index:1000;
+	left:0;
+	width:90%;
+	font-family:helvetica, sans-serif;
+	background:#2e2e2e;  /*#414141;  rgba(0,0,0,0.7) */
+	margin:0 auto;
+	border-radius:5px;
+	-webkit-box-shadow:0 0 10px #ccc;
+	overflow:visible;
+}
+
+#sw-header {
+	position:relative;
+	width:100%;
+	height:43px;
+}
+
+#sw-cancel, #sw-done {
+	width:auto;
+	margin-top:8px;
+	padding:0 16px;
+}
+
+#sw-cancel {
+	float:left;
+	margin-left:8px;
+}
+
+#sw-done {
+	float:right;
+	margin-right:8px;
+}
+
+.sw-pressed { opacity:0.4; }
+
+#sw-slots-wrapper {
+	position:relative; z-index:999;
+	display:block;
+	height:215px;
+	padding:0 11px;
+	overflow:hidden;
+}
+
+#sw-slots {
+	display:table;
+	width:100%;
+	background:url(../images/sw-slot-border.png) 50% 0 repeat-y; /* #fcfcfc */
+	color:white;
+}
+
+#sw-slots div {
+	display:table-cell;
+	height:100%;
+	padding-top:86px;
+	width:50%;
+}
+
+#sw-slots ul {
+	padding:0 0 85px 0;
+	margin:0;
+	list-style:none;
+}
+
+#sw-slots .sw-right { text-align:right; }
+#sw-slots .sw-shrink { width:1%; }
+#sw-slots .sw-readonly { background:#ddd; }
+
+#sw-slots li {
+	padding:0 8px;
+	height:44px;
+	overflow:hidden;
+	font:bold 24px/44px Helvetica,sans-serif;
+}
+
+#sw-frame {
+	position:absolute;
+	z-index:1000;
+	left:0;
+	right:0;
+	bottom:0;
+	height:183px;
+	border-width:16px;
+	-webkit-border-image:url(../images/sw-alpha-03.png) 16;
+}
+
+.footer_spacer {
+	margin-top:2px;
+	height: 55px;
+	min-height: 55px;
+}
+/* End spinningwheel.css */
+
+/*@media screen and (min-width:820px) {
+    #header_platform_nav, #wrapper, #footer_bar, #header_platform_nav_static, #side_menu { width:320px; }
+    #wrapper > div { *width:320px;*  }
+}*/

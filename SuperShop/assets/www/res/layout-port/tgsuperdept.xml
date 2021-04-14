@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffe6f2f7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/footer_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:id="@id/amend_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include android:id="@id/amend" layout="@layout/amend_order_view" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/signin_layout_footer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include android:id="@id/signin_anon_footer" layout="@layout/signin_footer" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/shop_header_lay" android:background="@drawable/screen_title_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/sub_header_color" android:layout_gravity="center_vertical" android:id="@id/shop_header_title" android:paddingLeft="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shop" />
+    </LinearLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/footer_layout">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip">
+                <TextView android:typeface="sans" android:textStyle="bold" android:textColor="@color/dark_text_blue" android:gravity="center" android:id="@id/freshfood_textview" android:background="@drawable/tgsuperdept_selector" android:paddingBottom="15.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:text="@string/freshfood_lbl" android:drawableTop="@drawable/shop_cat_fresh_food" />
+                <TextView android:typeface="sans" android:textStyle="bold" android:textColor="@color/dark_text_blue" android:gravity="center" android:id="@id/bakery_textview" android:background="@drawable/tgsuperdept_selector" android:paddingBottom="15.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bakery_lbl" android:drawableTop="@drawable/shop_cat_bakery" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip">
+                <TextView android:typeface="sans" android:textStyle="bold" android:textColor="@color/dark_text_blue" android:gravity="center" android:id="@id/foodcub_textview" android:background="@drawable/tgsuperdept_selector" android:paddingBottom="15.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:text="@string/foodcupboard_lbl" android:drawableTop="@drawable/shop_cat_food_cupboard" />
+                <TextView android:typeface="sans" android:textStyle="bold" android:textColor="@color/dark_text_blue" android:gravity="center" android:id="@id/frozenfood_textview" android:background="@drawable/tgsuperdept_selector" android:paddingBottom="15.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/frozenfood_lbl" android:drawableTop="@drawable/shop_cat_frozen_food" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip">
+                <TextView android:typeface="sans" android:textStyle="bold" android:textColor="@color/dark_text_blue" android:gravity="center" android:id="@id/drinks_textview" android:background="@drawable/tgsuperdept_selector" android:paddingBottom="15.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:text="@string/drinks_lbl" android:drawableTop="@drawable/shop_cat_drinks" />
+                <TextView android:typeface="sans" android:textStyle="bold" android:textColor="#ff004591" android:gravity="center" android:id="@id/baby_textview" android:background="@drawable/tgsuperdept_selector" android:paddingBottom="15.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/baby_lbl" android:drawableTop="@drawable/shop_cat_baby" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip">
+                <TextView android:typeface="sans" android:textStyle="bold" android:textColor="@color/dark_text_blue" android:gravity="center" android:id="@id/health_beauty_textview" android:background="@drawable/tgsuperdept_selector" android:paddingBottom="15.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:text="@string/healthbeauty_lbl" android:drawableTop="@drawable/shop_cat_health_beauty" />
+                <TextView android:typeface="sans" android:textStyle="bold" android:textColor="#ff004591" android:gravity="center" android:id="@id/pets_textview" android:background="@drawable/tgsuperdept_selector" android:paddingBottom="15.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pets_lbl" android:drawableTop="@drawable/shop_cat_pets" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip">
+                <TextView android:typeface="sans" android:textStyle="bold" android:textColor="@color/dark_text_blue" android:gravity="center" android:id="@id/household_textview" android:background="@drawable/tgsuperdept_selector" android:paddingBottom="15.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:text="@string/household_lbl" android:drawableTop="@drawable/shop_cat_household" />
+                <TextView android:typeface="sans" android:textStyle="bold" android:textColor="@color/dark_text_blue" android:gravity="center" android:id="@id/home_ents_textview" android:background="@drawable/tgsuperdept_selector" android:paddingBottom="15.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_ents_lbl" android:drawableTop="@drawable/shop_cat_homeware" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/amend_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@id/amend" layout="@layout/amend_order_view" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/amend_layout">
+        <RelativeLayout android:id="@id/cc_address_lay" android:background="@drawable/exp_grlistitem_selector" android:focusable="true" android:layout_width="fill_parent" android:layout_height="86.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="14.669983dip" android:layout_centerVertical="true">
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/slot_address_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Book a slot for Baldock Extra:" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/slot_street" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/reserve_slot_msg" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/slot_msg_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/reserve_slot_msg" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TabHost android:id="@id/slot_tabhost" android:background="@drawable/single_section" android:paddingTop="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/slot_tab_relative_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TabWidget android:id="@*android:id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/tab_divider" android:background="@color/dark_text_blue" android:layout_width="fill_parent" android:layout_height="2.669983dip" android:layout_below="@*android:id/tabs" />
+                <FrameLayout android:id="@*android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tab_divider" />
+            </RelativeLayout>
+        </TabHost>
+    </LinearLayout>
+</RelativeLayout>

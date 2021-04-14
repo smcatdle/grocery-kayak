@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/search_new_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/serach_lay_main" android:background="@drawable/search_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/serach_lay" android:paddingLeft="0.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <EditText android:id="@id/search_edittext" android:background="@drawable/dropdown_edittext_selector" android:paddingLeft="6.0dip" android:paddingRight="35.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollHorizontally="true" android:singleLine="true" />
+                <RelativeLayout android:id="@id/clear_search" android:focusable="false" android:layout_width="38.0dip" android:layout_height="30.0dip" android:layout_alignRight="@id/search_edittext" android:layout_centerVertical="true">
+                    <ImageButton android:id="@id/close_btn" android:background="@drawable/icon_delete_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/search_divider_voice" android:background="@drawable/search_bar_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/voice_icon" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/voice_search_btn" android:background="@drawable/icon_voice_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/search_divider_barcode" android:background="@drawable/search_bar_divider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/barcode_scan_btn" android:background="@drawable/icon_barcode_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:layout_centerVertical="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.tesco.grocery.oneapp.view">
+    <com.tesco.grocery.oneapp.view.TOLandingListView android:id="@id/landing_listview" android:scrollbars="none" android:fadingEdge="none" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:dividerHeight="0.0dip" android:layout_below="@id/notification_layout" android:headerDividersEnabled="false" android:footerDividersEnabled="false" />
+    <RelativeLayout android:id="@id/notification_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/default_header_layout">
+        <RelativeLayout android:orientation="vertical" android:id="@id/failed_layout" android:background="@drawable/uf_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/refersh_image" android:background="@drawable/icon_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:id="@id/failed_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="Update failed" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/loading_layout" android:paddingTop="6.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/loading_text" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Loading..." android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <ImageView android:layout_gravity="center" android:id="@id/loading_image" android:background="@drawable/tesco_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/loading_text" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

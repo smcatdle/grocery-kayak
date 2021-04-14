@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/signin_layout_lin" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="49.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/signin_divider_blue" android:background="@color/dark_text_blue" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:id="@id/signin_layout_rel" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/signin_divider" android:background="@color/gray" android:layout_width="1.0dip" android:layout_height="32.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0dip" android:typeface="sans" android:textStyle="bold" android:textColor="@color/dark_text_blue" android:gravity="center" android:id="@id/signin_reg" android:background="@drawable/anon_signinoverlay_btn_selector" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/anon_register_cap" android:layout_toLeftOf="@id/signin_divider" />
+        <TextView android:textSize="18.0dip" android:typeface="sans" android:textStyle="bold" android:textColor="@color/dark_text_blue" android:gravity="center" android:id="@id/signin_sign" android:background="@drawable/anon_signinoverlay_btn_selector" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/anon_signin_cap" android:layout_toRightOf="@id/signin_divider" />
+    </RelativeLayout>
+</LinearLayout>

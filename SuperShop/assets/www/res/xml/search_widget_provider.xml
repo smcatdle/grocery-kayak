@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:focusable="true" android:minWidth="294.0dip" android:minHeight="50.0dip" android:updatePeriodMillis="86400000" android:initialLayout="@layout/tgsearchwidget"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

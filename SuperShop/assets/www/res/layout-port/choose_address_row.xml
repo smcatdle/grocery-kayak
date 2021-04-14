@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/choose_address_row_sub_lay" android:background="@drawable/cc_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="normal" android:textColor="@color/black" android:id="@id/choose_address_row_title" android:paddingTop="6.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="@color/gray" android:id="@id/choose_address_row_data" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="" android:singleLine="true" android:layout_below="@id/choose_address_row_title" android:layout_alignParentLeft="true" />
+</RelativeLayout>

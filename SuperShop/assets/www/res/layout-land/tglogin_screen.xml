@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffe6f2f7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="16.0sp" android:typeface="sans" android:textColor="#ff004591" android:textColorHint="#ff004591" android:id="@id/username_et" android:background="@drawable/input_field_drawable" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="9.0dip" android:hint="@string/user_name" android:singleLine="true" android:inputType="textEmailAddress" />
+                <EditText android:textSize="16.0sp" android:typeface="sans" android:textColor="#ff004591" android:textColorHint="#ff004591" android:id="@id/password_et" android:background="@drawable/input_field_drawable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="9.0dip" android:hint="@string/password" android:password="true" android:singleLine="true" />
+                <Button android:typeface="sans" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/login_btn" android:background="@drawable/login_btn_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:text="@string/login" android:shadowColor="#ff7e7e7e" android:shadowDy="1.0" />
+                <TextView android:textSize="14.0sp" android:typeface="sans" android:textColor="#ff333333" android:id="@id/reg_link" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:text="@string/reg_link" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/shoppinglist_lay" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <include android:id="@id/shop_list_scrn" layout="@layout/tgshoppinglist_screen" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

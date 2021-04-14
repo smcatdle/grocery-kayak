@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/exp_grlistitem_selector" android:focusable="true" android:clickable="true" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/listrowdata_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:textSize="16.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="@color/dark_text_blue" android:id="@id/po_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="90.0dip" android:text="Tuesday 16th February" android:singleLine="true" />
+        <TextView android:textSize="12.0sp" android:typeface="sans" android:textColor="@color/unavail_color" android:id="@id/po_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="90.0dip" android:text="Between 11am - 1pm" android:singleLine="true" android:shadowColor="@color/unitprice_shadow" android:layout_below="@id/po_day" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/po_amend_lay" android:background="@drawable/btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="14.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pro_add_price" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="0.0dip" android:text="£9999.99" android:shadowColor="@color/dark_text_blue" android:shadowDy="-1.0" />
+            <TextView android:textSize="10.0sp" android:typeface="sans" android:textStyle="bold" android:textColor="#ff85a8cc" android:id="@id/pro_add_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/amend_lbl" android:shadowColor="@color/dark_text_blue" android:shadowDy="-1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

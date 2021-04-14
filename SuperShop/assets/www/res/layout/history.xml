@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="25.0dip" android:textColor="@color/gray" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="History" />
+    <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:cacheColorHint="#00000000" android:layout_weight="1.26" />
+    <FrameLayout android:background="#ffb1b1b1" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <FrameLayout android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <ImageButton android:layout_gravity="left|center" android:id="@id/tutoButton" android:background="@drawable/btn_background" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_menu_help_holo_light" android:scaleType="centerInside" android:contentDescription="@string/desc_infoButton" />
+            <ImageButton android:layout_gravity="center" android:id="@id/goBack" android:background="@drawable/btn_background" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_camera" android:scaleType="centerInside" android:contentDescription="@string/desc_capture" />
+            <ImageButton android:layout_gravity="right|center" android:id="@id/historyButton" android:background="@drawable/btn_background" android:clickable="true" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_menu_history" android:scaleType="centerInside" android:contentDescription="@string/desc_historyButton" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>
