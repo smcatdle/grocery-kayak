@@ -22,7 +22,7 @@ https://play.google.com/store/apps/details?id=com.grocerykayak&gl=IE
 
 Background :
 --------------
-The project was written as a MVP (Minimal Viable Product) in 2015. Enterprise Ireland were approached for funding or backing, but I was informed that Enterprise Ireland only support Multi Nationals and not startups! However, due to some issues with Enterprise Ireland's funding decisoon mechanism, they backed another crowd from the Tallaght region in Dublin (I dont know if they have a software background). I was politely informed that I should study a certificate course in a Community College, next to Kevin Street Garda Station! (I have an honours degree in Computer Science from UCD, and with experience in a range of startups/blue chips). This was just the start of the attacks, for pursueing this project. 
+The project was written as a MVP (Minimal Viable Product) in 2015. Enterprise Ireland were approached for funding and support, but I was informed that Enterprise Ireland only support Multi Nationals and not startups! Enterprise Ireland backed another crowd from the Tallaght region in Dublin. The timing of the Grocery Kayak portal going live (Summer 2015) coincided exactly with Enterprise Ireland funding the rival company. I was politely informed that I should study a certificate course in a Community College, next to Kevin Street Garda Station! (I have an honours degree in Computer Science from UCD, and with experience in a range of startups/blue chips). This was just the start of the attacks, for pursueing this project. 
 It has now been decided to open source the MVP source code.
 
 
